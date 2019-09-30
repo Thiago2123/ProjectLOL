@@ -8,6 +8,6 @@
 <script src="lib/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
 <script src="lib/bootstrap-notify-3.1.3/dist/bootstrap-notify.min.js"></script>
 
-<!-- componentes
-<link href="style/css/com/button.css" rel="stylesheet" type="text/css" />
-<link href="style/css/com/tabela.css" rel="stylesheet" type="text/css" /> -->
+<!-- componentes-->
+<link href="style/css/com/jumbotron.css" rel="stylesheet" type="text/css" />
+<link href="style/css/com/div.css" rel="stylesheet" type="text/css" />
