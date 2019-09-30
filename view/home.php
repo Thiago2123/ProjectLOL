@@ -33,8 +33,14 @@
             </div>
             <div class="row">
                 <div class="col-7 border border-danger rounded" id="noticias">
-                    <div>
-                        <h4 class="text-center">Notícias</h4>
+                    <div class="row">
+                        <h4 style="margin-inline-start: auto;">Notícias</h4>
+                        <div class="btn-toolbar">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-arrow-left"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-group">
                         <div class="card">
@@ -85,6 +91,7 @@
                             </small>
                         </div>
                     </div>
+                    <button class="btn btn-success btn-block" style="margin-top: 260px;" >Cadastrar</button>
                 </div>
             </div>
         </div>

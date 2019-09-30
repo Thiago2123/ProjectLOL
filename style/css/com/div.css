@@ -2,4 +2,9 @@
   margin: 0 10px 0 50px;
 }
 
+.btn-toolbar {
+  margin-inline-start: auto;
+  margin-right: 15px;
+}
+
 /*# sourceMappingURL=div.css.map */
