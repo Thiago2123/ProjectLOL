@@ -91,10 +91,10 @@
                             </small>
                         </div>
                     </div>
-                    <button class="btn btn-success btn-block" style="margin-top: 260px;" >Cadastrar</button>
+                    <button class="btn btn-success btn-block" style="margin-top: 42%;" >Cadastrar</button>
                 </div>
             </div>
         </div>
-         
+         <div class="fixed-bottom border" style=" background-color: red">as</div>
     </body>
 </html>
