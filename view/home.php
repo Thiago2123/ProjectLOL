@@ -27,8 +27,39 @@
                 </div>
             </div>
             <div class="jumbotron jumbotron">
-                <div class="container">
-                    <p class="lead">Resultado dos jogos passados</p>
+                <div class="row" style="margin: auto">
+                    <div class="btn btn-primary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-left"></i></div>
+                    <div class="div_jogos border border-danger m-1 p-1">
+                        <div class="text-center font-weight-light">03/10</div>
+                        <div class="label_div_jogos row mr-0 ml-0">Flamengo<p class="font-weight-bold ml-1">0</p> x <p class="font-weight-bold mr-1">1</p> Damwon</div>
+                        <div class="text-center font-weight-light">10:00</div>
+                    </div>  
+                    <div class="div_jogos border border-danger m-1 p-1">
+                        <div class="text-center font-weight-light">03/10</div>
+                        <div class="label_div_jogos row mr-0 ml-0">Dmg<p class="font-weight-bold ml-1">0</p> x <p class="font-weight-bold mr-1">1</p> Splice</div>
+                        <div class="text-center font-weight-light">11:00</div>
+                    </div>  
+                    <div class="div_jogos border border-danger m-1 p-1">
+                        <div class="text-center font-weight-light">03/10</div>
+                        <div class="label_div_jogos row mr-0 ml-0">CNB<p class="font-weight-bold ml-1">1</p> x <p class="font-weight-bold mr-1">0</p> Kabum</div>
+                        <div class="text-center font-weight-light">13:00</div>
+                    </div>  
+                    <div class="div_jogos border border-danger m-1 p-1">
+                        <div class="text-center font-weight-light">03/10</div>
+                        <div class="label_div_jogos row mr-0 ml-0">Pain Gaming<p class="font-weight-bold ml-1">1</p> x <p class="font-weight-bold mr-1">0</p> Itnz</div>
+                        <div class="text-center font-weight-light">14:00</div>
+                    </div> 
+                    <div class="div_jogos border border-danger m-1 p-1">
+                        <div class="text-center font-weight-light">03/10</div>
+                        <div class="label_div_jogos row mr-0 ml-0">Keyd stars<p class="font-weight-bold ml-1">1</p> x <p class="font-weight-bold mr-1">0</p> Red </div>
+                        <div class="text-center font-weight-light">13:00</div>
+                    </div>
+                    <div class="div_jogos border border-danger m-1 p-1">
+                        <div class="text-center font-weight-light">03/10</div>
+                        <div class="label_div_jogos row mr-0 ml-0">SKT1<p class="font-weight-bold ml-1">0</p> x <p class="font-weight-bold mr-1">1</p> Team Liquid</div>
+                        <div class="text-center font-weight-light">13:00</div>
+                    </div>  
+                    <div class="btn btn-primary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-right"></i></div>
                 </div>
             </div>
             <div class="row">
@@ -95,6 +126,6 @@
                 </div>
             </div>
         </div>
-         <div class="fixed-bottom border" style=" background-color: red">as</div>
+         <div class="fixed border bg-secondary mt-2">League of Stars</div>
     </body>
 </html>

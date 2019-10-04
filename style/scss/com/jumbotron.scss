@@ -1,8 +1,18 @@
 @import "../def/variaveis.scss";
 
 .jumbotron{
-    margin: 10px -15px 1rem -15px;
-    padding: 1rem;
-    background-color: red;
-    
+    margin: 1% -15px 1% -15px;
+    padding: 1%;
+
+    .div_jogos{
+        width: 200;
+        height: 60px;
+        line-height: 110%;
+
+
+        .label_div_jogos{
+            height: 36%;
+        }
+        
+    }
 }

@@ -1,7 +1,14 @@
 .jumbotron {
-  margin: 10px -15px 1rem -15px;
-  padding: 1rem;
-  background-color: red;
+  margin: 1% -15px 1% -15px;
+  padding: 1%;
+}
+.jumbotron .div_jogos {
+  width: 200;
+  height: 60px;
+  line-height: 110%;
+}
+.jumbotron .div_jogos .label_div_jogos {
+  height: 36%;
 }
 
 /*# sourceMappingURL=jumbotron.css.map */
