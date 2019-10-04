@@ -126,6 +126,6 @@
                 </div>
             </div>
         </div>
-         <div class="fixed border bg-secondary mt-2">League of Stars</div>
+         <div class="fixed border bg-secondary mt-2 text-warning">League of Stars</div>
     </body>
 </html>
