@@ -22,10 +22,10 @@
                             <a class="nav-link text-warning" href="home">Página Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white active" href="">Escalação</a>
+                            <a class="nav-link text-white active" href="escalacao">Escalação</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-warning" href="">Ligas</a>
+                            <a class="nav-link text-warning" href="ligas">Ligas</a>
                         </li>
                     </ul>
                 </div>
@@ -40,7 +40,7 @@
             </div>
             <div class="row">
                 <div class="col-8 mt-4">
-                    <div id="filtros" class="border border-warning row">
+                    <div id="filtros" class="row">
                         <div class="form-group col-2">
                             <label for="Rota">Rota</label>
                             <select class="form-control" id="Rota">
@@ -107,7 +107,7 @@
                                 <td>Flamengo</td>
                                 <td>Atirador</td>
                                 <td>25</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer"></i></td>
+                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
 
                             </tr>
                             <tr>
@@ -115,35 +115,35 @@
                                 <td>Intz</td>
                                 <td>Atirador</td>
                                 <td>22</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer"></i></td>
+                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
                             </tr>
                             <tr>
                                 <td>Robo</td>
                                 <td>Flamengo</td>
                                 <td>Topo</td>
                                 <td>2</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer"></i></td>
+                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
                             </tr>
                             <tr>
                                 <td>Revolta</td>
                                 <td>Keyd</td>
                                 <td>Selva</td>
                                 <td>10</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer"></i></td>
+                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
                             </tr>
                             <tr>
                                 <td>Luci</td>
                                 <td>Flamengo</td>
                                 <td>Suporte</td>
                                 <td>20</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer"></i></td>
+                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
                             </tr>
                             <tr>
                                 <td>Kami</td>
                                 <td>Pain</td>
                                 <td>Meio</td>
                                 <td>37</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer"></i></td>
+                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
                             </tr>
                         </tbody>
                     </table>
@@ -154,7 +154,7 @@
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="fas fa-plus"></i> Time 1
+                                    <i class="fas fa-plus"></i> Nome do time
                                     </button>
                                 </h5>
                             </div>
@@ -234,34 +234,6 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <i class="fas fa-plus"></i> Time 2
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <i class="fas fa-plus"></i> Time 3
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                                 </div>
                             </div>
                         </div>

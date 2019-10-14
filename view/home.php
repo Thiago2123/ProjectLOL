@@ -122,7 +122,7 @@
                             </small>
                         </div>
                     </div>
-                    <button class="btn btn-success btn-block" style="margin-top: 42%;" >Cadastrar</button>
+                    <button class="btn btn-success btn-block" style="margin-top: 42%" >Cadastrar</button>
                 </div>
             </div>
         </div>
