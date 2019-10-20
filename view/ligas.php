@@ -41,15 +41,61 @@
             <div class="row">
                 <div class="col-8 mt-4">
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <label for="exampleFormControlInput1">Pesquisar</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome da liga">
                     </div>
                 </div>
-                <div class="col-4 mt-2">
-                    
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr><th style="text-align: center" colspan="3" >Minhas ligas</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th style="width: 20%">Liga</th>
+                            <th style="width: 20%">Minha posição</th>
+                            <th style="width: 20%">Quantidade de jogadores</th>
+                            </tr>
+                            <tr onclick="carregarLiga(idLiga)">
+                                <td>Os pintudos</td>
+                                <td>10.000</td>
+                                <td>70.000</td>
+                            </tr>
+                            <tr onclick="carregarLiga(idLiga)">
+                                <td>Família</td>
+                                <td>1</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>                
+                </div>
+                <div class="col-6">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr><th style="text-align: center" colspan="3" >Ligas para entrar</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th style="width: 20%">Liga</th>
+                            <th style="width: 20%">Minha posição</th>
+                            <th style="width: 20%">Quantidade de jogadores</th>
+                            </tr>
+                            <tr onclick="carregarLiga(idLiga)">
+                                <td>Os pintudos</td>
+                                <td>10.000</td>
+                                <td>70.000</td>
+                            </tr>
+                            <tr onclick="carregarLiga(idLiga)">
+                                <td>Família</td>
+                                <td>1</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>                
                 </div>
             </div>
-
         </div>
          <div class="fixed border bg-secondary mt-2 text-warning">League of Stars</div>
     </body>

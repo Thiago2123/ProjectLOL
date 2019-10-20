@@ -35,7 +35,10 @@
                             <img src="../ProjectLOL/img/logo.jpg" class="rounded img-fluid" alt="logo">
                         </div>
                         <div class="ml-1 text-warning"><label>Bem vindo Usuário</label></div>
-                    </div>        
+                    </div> 
+                    <div class="row m-auto">
+                        <div class="ml-5 text-warning"><label>R$: 25,00</label></div>
+                    </div>       
                 </div>
             </div>
             <div class="row">
@@ -56,10 +59,13 @@
                             <label for="Rota">Time</label>
                             <select class="form-control" id="Rota">
                                 <option value=""></option>
-                                <option value="pain">Pain</option>
+                                <option value="one">One</option>
                                 <option value="cnb">Cnb</option>
-                                <option value="keyd">Keyd</option>
+                                <option value="redemption">Redemption</option>
+                                <option value="pain">Pain</option>
                                 <option value="intz">Intz</option>
+                                <option value="uppercut">Uppercut</option>
+                                <option value="flamengo">Flamengo</option>
                                 <option value="kabum">Kabum</option>
                             </select>
                         </div>
