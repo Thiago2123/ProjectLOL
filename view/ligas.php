@@ -59,7 +59,7 @@
                             <th style="width: 20%">Quantidade de jogadores</th>
                             </tr>
                             <tr onclick="carregarLiga(idLiga)">
-                                <td>Os pintudos</td>
+                                <td>Os Sapão</td>
                                 <td>10.000</td>
                                 <td>70.000</td>
                             </tr>
@@ -83,14 +83,14 @@
                             <th style="width: 20%">Quantidade de jogadores</th>
                             </tr>
                             <tr onclick="carregarLiga(idLiga)">
-                                <td>Os pintudos</td>
+                                <td>Neblinosa</td>
                                 <td>10.000</td>
                                 <td>70.000</td>
                             </tr>
                             <tr onclick="carregarLiga(idLiga)">
-                                <td>Família</td>
-                                <td>1</td>
-                                <td>5</td>
+                                <td>FMU</td>
+                                <td>3</td>
+                                <td>6</td>
                             </tr>
                         </tbody>
                     </table>                
