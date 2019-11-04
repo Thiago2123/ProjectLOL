@@ -12,8 +12,8 @@
         <div class="container-fluid no-gutters">
             <div class="navbar row py-0 bg-secondary">
                 <div class="nav btn btn-secondary row">
-                    <div style="width:50px; height: 50px">
-                        <img src="../ProjectLOL/img/logo.jpg" class="rounded img-fluid" alt="logo">
+                    <div>
+                        <img src="../ProjectLOL/img/logo.jpg" class="rounded img-fluid" style="width:50px; height: 30px">
                     </div>
                 </div>
                 <div>
@@ -31,8 +31,8 @@
                 </div>
                 <div>
                     <div class="row m-auto">
-                        <div style="width:50px; height: 50px">
-                            <img src="../ProjectLOL/img/logo.jpg" class="rounded img-fluid" alt="logo">
+                        <div>
+                            <img src="../ProjectLOL/img/logo.jpg" class="rounded img-fluid" style="width:50px; height: 30px">
                         </div>
                         <div class="ml-1 text-warning"><label>Bem vindo Usuário</label></div>
                     </div> 
@@ -75,22 +75,18 @@
                                     <legend class="col-form-label col-sm-2 pt-0">Preço:</legend>
                                     <div class="col-sm-10">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="0" checked>
                                             <label class="form-check-label" for="gridRadios1">
                                                 Abaixo de 10$
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                            <label class="form-check-label" for="gridRadios2">
-                                                Maior de 10$
-                                            </label>
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="10">
+                                            <label class="form-check-label" for="gridRadios2">Maior de 10$ </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-                                            <label class="form-check-label" for="gridRadios3">
-                                                Maiores de 20$
-                                            </label>
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="20">
+                                            <label class="form-check-label" for="gridRadios3">Maiores de 20$</label>
                                         </div>
                                     </div>
                                 </div>
@@ -112,7 +108,7 @@
                                 <td>Brtt</td>
                                 <td>Flamengo</td>
                                 <td>Atirador</td>
-                                <td>25</td>
+                                <td>25 R$</td>
                                 <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
 
                             </tr>
@@ -120,35 +116,35 @@
                                 <td>Micão</td>
                                 <td>Intz</td>
                                 <td>Atirador</td>
-                                <td>22</td>
+                                <td>22 R$</td>
                                 <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
                             </tr>
                             <tr>
                                 <td>Robo</td>
                                 <td>Flamengo</td>
                                 <td>Topo</td>
-                                <td>2</td>
+                                <td>02 R$</td>
                                 <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
                             </tr>
                             <tr>
                                 <td>Revolta</td>
                                 <td>Keyd</td>
                                 <td>Selva</td>
-                                <td>10</td>
+                                <td>10 R$</td>
                                 <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
                             </tr>
                             <tr>
                                 <td>Luci</td>
                                 <td>Flamengo</td>
                                 <td>Suporte</td>
-                                <td>20</td>
+                                <td>20 R$</td>
                                 <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
                             </tr>
                             <tr>
                                 <td>Kami</td>
                                 <td>Pain</td>
                                 <td>Meio</td>
-                                <td>37</td>
+                                <td>37 R$</td>
                                 <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
                             </tr>
                         </tbody>

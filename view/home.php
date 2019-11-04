@@ -12,9 +12,7 @@
         <div class="container-fluid no-gutters">
             <div class="navbar row py-0 bg-secondary">
                 <div class="nav btn btn-secondary row">
-                    <div style="width:50px; height: 50px">
-                        <img src="../ProjectLOL/img/logo.jpg" class="rounded img-fluid" alt="logo">
-                    </div>
+                    <div> <img src="../ProjectLOL/img/logo.jpg" class="rounded img-fluid" style="width:50px; height: 30px"></div>
                 </div>
                 <div>
                     <div class="form-inline mt-2" style="margin-bottom: auto">
@@ -31,32 +29,32 @@
                     <div class="btn btn-primary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-left"></i></div>
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">Flamengo<div class="font-weight-bold ml-1">0</div> x <div class="font-weight-bold mr-1">1</div> Damwon</div>
+                        <div class="text-center mr-0 ml-0">Flamengo <b>0</b> x <b>1</b> Dawnon</div>
                         <div class="text-center font-weight-light">10:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">Dmg<div class="font-weight-bold ml-1">0</div> x <div class="font-weight-bold mr-1">1</div> Splice</div>
+                        <div class="text-center mr-0 ml-0">Dmg <b>0</b> x <b>1</b> Splice</div>
                         <div class="text-center font-weight-light">11:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">CNB<div class="font-weight-bold ml-1">1</div> x <div class="font-weight-bold mr-1">0</div> Kabum</div>
+                        <div class="text-center mr-0 ml-0">CNB <b>0</b> x <b>1</b>Kabum</div>
                         <div class="text-center font-weight-light">13:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
-                        <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">Pain Gaming<div class="font-weight-bold ml-1">1</div> x <div class="font-weight-bold mr-1">0</div> Itnz</div>
+                        <div class="text-center font-weight-light">04/10</div>
+                        <div class="text-center mr-0 ml-0">Pain Gaming <b>1</b> x <b>0</b> Itnz</div>
                         <div class="text-center font-weight-light">14:00</div>
                     </div> 
                     <div class="div_jogos border border-danger m-1 p-1">
-                        <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">Keyd stars<div class="font-weight-bold ml-1">1</div> x <div class="font-weight-bold mr-1">0</div> Red </div>
+                        <div class="text-center font-weight-light">04/10</div>
+                        <div class="text-center mr-0 ml-0">Keyd stars <b>1</b> x <b>0</b> Red </div>
                         <div class="text-center font-weight-light">13:00</div>
                     </div>
                     <div class="div_jogos border border-danger m-1 p-1">
-                        <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">SKT1<div class="font-weight-bold ml-1">0</div> x <div class="font-weight-bold mr-1">1</div> Team Liquid</div>
+                        <div class="text-center font-weight-light">04/10</div>
+                        <div class="text-center mr-0 ml-0">SKT1 <b>1</b> x <b>0</b> Team Liquid</div>
                         <div class="text-center font-weight-light">13:00</div>
                     </div>  
                     <div class="btn btn-primary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-right"></i></div>
