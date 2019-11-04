@@ -10,5 +10,9 @@
 .jumbotron .div_jogos .label_div_jogos {
   height: 36%;
 }
+.jumbotron .team-games {
+  width: 30px;
+  height: 30px;
+}
 
 /*# sourceMappingURL=jumbotron.css.map */

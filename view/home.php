@@ -22,7 +22,7 @@
                         <div class="input-group mb-2 mr-sm-2">
                             <input type="password" class="form-control" id="senha" placeholder="Senha">
                         </div>
-                        <button type="button" class="btn btn-success mb-2">Entrar</button>
+                        <a href="escalacao"><button type="button" class="btn btn-success mb-2">Entrar</button></a>
                     </div>        
                 </div>
             </div>
@@ -31,32 +31,32 @@
                     <div class="btn btn-primary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-left"></i></div>
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">Flamengo<p class="font-weight-bold ml-1">0</p> x <p class="font-weight-bold mr-1">1</p> Damwon</div>
+                        <div class="label_div_jogos row mr-0 ml-0">Flamengo<div class="font-weight-bold ml-1">0</div> x <div class="font-weight-bold mr-1">1</div> Damwon</div>
                         <div class="text-center font-weight-light">10:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">Dmg<p class="font-weight-bold ml-1">0</p> x <p class="font-weight-bold mr-1">1</p> Splice</div>
+                        <div class="label_div_jogos row mr-0 ml-0">Dmg<div class="font-weight-bold ml-1">0</div> x <div class="font-weight-bold mr-1">1</div> Splice</div>
                         <div class="text-center font-weight-light">11:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">CNB<p class="font-weight-bold ml-1">1</p> x <p class="font-weight-bold mr-1">0</p> Kabum</div>
+                        <div class="label_div_jogos row mr-0 ml-0">CNB<div class="font-weight-bold ml-1">1</div> x <div class="font-weight-bold mr-1">0</div> Kabum</div>
                         <div class="text-center font-weight-light">13:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">Pain Gaming<p class="font-weight-bold ml-1">1</p> x <p class="font-weight-bold mr-1">0</p> Itnz</div>
+                        <div class="label_div_jogos row mr-0 ml-0">Pain Gaming<div class="font-weight-bold ml-1">1</div> x <div class="font-weight-bold mr-1">0</div> Itnz</div>
                         <div class="text-center font-weight-light">14:00</div>
                     </div> 
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">Keyd stars<p class="font-weight-bold ml-1">1</p> x <p class="font-weight-bold mr-1">0</p> Red </div>
+                        <div class="label_div_jogos row mr-0 ml-0">Keyd stars<div class="font-weight-bold ml-1">1</div> x <div class="font-weight-bold mr-1">0</div> Red </div>
                         <div class="text-center font-weight-light">13:00</div>
                     </div>
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="label_div_jogos row mr-0 ml-0">SKT1<p class="font-weight-bold ml-1">0</p> x <p class="font-weight-bold mr-1">1</p> Team Liquid</div>
+                        <div class="label_div_jogos row mr-0 ml-0">SKT1<div class="font-weight-bold ml-1">0</div> x <div class="font-weight-bold mr-1">1</div> Team Liquid</div>
                         <div class="text-center font-weight-light">13:00</div>
                     </div>  
                     <div class="btn btn-primary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-right"></i></div>
@@ -126,6 +126,6 @@
                 </div>
             </div>
         </div>
-         <div class="fixed-bottom border bg-secondary mt-2 text-warning">League of Stars</div>
+        <div class="fixed-bottom bg-secondary mt-2 text-warning">League of Stars</div>
     </body>
 </html>

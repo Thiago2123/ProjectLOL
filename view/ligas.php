@@ -39,10 +39,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-8 mt-4">
+                <div class="col-6 mt-4">
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Pesquisar</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome da liga">
+                        <label for="buscar">Pesquisar</label>
+                        <input type="text" class="form-control" id="buscar" placeholder="Nome da liga">
                     </div>
                 </div>
             </div>
@@ -50,20 +50,20 @@
                 <div class="col-6">
                     <table class="table table-striped table-dark">
                         <thead>
-                            <tr><th style="text-align: center" colspan="3" >Minhas ligas</th></tr>
+                            <tr><th style="text-align: center" colspan="3" >Ligas para participar </th></tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <th style="width: 20%">Liga</th>
+                            <th style="width: 20%">Nome</th>
                             <th style="width: 20%">Minha posição</th>
                             <th style="width: 20%">Quantidade de jogadores</th>
                             </tr>
-                            <tr onclick="carregarLiga(idLiga)">
+                            <tr onclick="carregarLiga(idLiga)" style="cursor: pointer">
                                 <td>Os Sapão</td>
                                 <td>10.000</td>
                                 <td>70.000</td>
                             </tr>
-                            <tr onclick="carregarLiga(idLiga)">
+                            <tr onclick="carregarLiga(idLiga)" style="cursor: pointer">
                                 <td>Família</td>
                                 <td>1</td>
                                 <td>5</td>
@@ -72,24 +72,24 @@
                     </table>                
                 </div>
                 <div class="col-6">
-                    <table class="table table-striped table-dark">
+                    <table class="table table-striped table-success">
                         <thead>
-                            <tr><th style="text-align: center" colspan="3" >Ligas para entrar</th></tr>
+                            <tr><th style="text-align: center" colspan="3" >Ligas participantes</th></tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <th style="width: 20%">Liga</th>
+                            <th style="width: 20%">Nome</th>
                             <th style="width: 20%">Minha posição</th>
                             <th style="width: 20%">Quantidade de jogadores</th>
                             </tr>
-                            <tr onclick="carregarLiga(idLiga)">
-                                <td>Neblinosa</td>
-                                <td>10.000</td>
-                                <td>70.000</td>
+                            <tr onclick="$('#modal_info_liga').modal('show')" style="cursor: pointer">
+                                <td>Champions</td>
+                                <td>3°</td>
+                                <td>200</td>
                             </tr>
-                            <tr onclick="carregarLiga(idLiga)">
+                            <tr onclick="carregarLiga(idLiga)" style="cursor: pointer">
                                 <td>FMU</td>
-                                <td>3</td>
+                                <td>6°</td>
                                 <td>6</td>
                             </tr>
                         </tbody>
@@ -97,6 +97,83 @@
                 </div>
             </div>
         </div>
-         <div class="fixed border bg-secondary mt-2 text-warning">League of Stars</div>
+        <div class="fixed-bottom bg-secondary mt-2 text-warning">League of Stars</div>
+
+
+            <!--------------------------------      
+                M O D A L  I N F O  L I G A  
+            ---------------------------------->
+            <div class="modal fade" id="modal_info_liga" >
+                <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="border mt-4 ml-3 mr-3 row ">
+                                    <div class=""><img src="../ProjectLOL/img/liga_emblema.jpg" style="width:100px; height:100px" class="rounded img-fluid"></div>
+                                    <div class="col-10">
+                                        <h4>Liga Champions</h4>
+                                        <p>Liga criada para fãs que gostam de uma boa parida de league of legends, pegando seu persongem preferido.</p>
+                                        <i class="fas fa-users" style="color: green"> 200</i>
+                                        <label class="d-flex justify-content-end" style="margin: -2%"> Criado em: 01/05/2018</label>
+                                        
+                                    </div>
+                                </div>
+                                <table class="mt-5 table table-striped">
+                                    <thead>
+                                        <th style="width: 20%; text-align: center">Usuário</th>
+                                        <th style="width: 20%; text-align: center">Posição</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: center">Joao2123</td>
+                                            <td style="text-align: center">01° <i class="fas fa-arrow-down" style="color: red"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">PeterJonson </td>
+                                            <td style="text-align: center">02° <i class="fas fa-arrow-up" style="color: green"></i></td>
+                                        </tr>
+                                        <tr class="table-primary">
+                                            <td style="text-align: center">Usuário</td>
+                                            <td style="text-align: center">03° <i class="fas fa-arrow-up" style="color: green"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">Guest_kiko</td>
+                                            <td style="text-align: center">04° <i class="fas fa-arrow-down" style="color: red"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">Zeca</td>
+                                            <td style="text-align: center">05° <i class="fas fa-arrow-up" style="color: green"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">Zeca</td>
+                                            <td style="text-align: center">06° <i class="fas fa-arrow-up" style="color: green"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">Zeca</td>
+                                            <td style="text-align: center">07° <i class="fas fa-arrow-up" style="color: green"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">Zeca</td>
+                                            <td style="text-align: center">08° <i class="fas fa-minus" style="color: blue"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">Zeca</td>
+                                            <td style="text-align: center">09° <i class="fas fa-minus" style="color: blue"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">Zeca</td>
+                                            <td style="text-align: center">10° <i class="fas fa-minus" style="color: blue"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>                
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" onclick="$('#modal_info_liga').modal('hide')"><i class="fas fa-arrow-circle-left"></i> Fechar</button>
+                            <button type="button" class="btn btn-success" onclick="$('#modal_info_liga').modal('hide');  $.notify({icon: 'fas fa-check-circle', message: 'Participando da liga'})"><i class="fas fa-sign-in-alt"></i> Entrar na liga</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </body>
 </html>

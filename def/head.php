@@ -14,3 +14,4 @@
 <link href="style/css/com/jumbotron.css" rel="stylesheet" type="text/css" />
 <link href="style/css/com/div.css" rel="stylesheet" type="text/css" />
 <link href="style/css/com/formcontrol.css" rel="stylesheet" type="text/css" />
+<link href="style/css/com/table.css" rel="stylesheet" type="text/css" />
