@@ -5,6 +5,7 @@
             require("../def/function.php");
             //$connection = connection();
         ?>
+        <script type="text/javascript" src="js/functions.js"></script>
         <!-- <script type="text/javascript" src="js/livro.js"></script> -->
         <title>League of Stars - Home</title>
     </head>
@@ -20,7 +21,7 @@
                         <div class="input-group mb-2 mr-sm-2">
                             <input type="password" class="form-control" id="senha" placeholder="Senha">
                         </div>
-                        <a href="escalacao"><button type="button" class="btn btn-success mb-2">Entrar</button></a>
+                        <button id="log" type="button" class="btn btn-success mb-2" onclick="sendCheck()">Entrar</button>
                     </div>        
                 </div>
             </div>
@@ -120,7 +121,8 @@
                             </small>
                         </div>
                     </div>
-                    <button class="btn btn-success btn-block" style="margin-top: 42%" >Cadastrar</button>
+                    <button id="cad_botao" class="btn btn-success btn-block" style="margin-top: 42%" 
+                    onclick="teste()">Cadastrar</button>
                 </div>
             </div>
         </div>
