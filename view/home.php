@@ -6,7 +6,6 @@
             //$connection = connection();
         ?>
         <script type="text/javascript" src="js/functions.js"></script>
-        <!-- <script type="text/javascript" src="js/livro.js"></script> -->
         <title>League of Stars - Home</title>
     </head>
     <body>

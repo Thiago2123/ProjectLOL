@@ -2,9 +2,9 @@ var obj = {"0":{"name":"pedro","email":"pedrod.ss@hotmail.com", "password":"2131
 
 function teste(){
 	var id = +Object.keys(obj)[Object.keys(obj).length-1]+1;
-	var name = document.querySelector("#cad_nome").value;
-	var email = document.querySelector("#cad_email").value;
-	var senha = document.querySelector("#cad_senha").value;
+	var name = $("#cad_nome").val();
+	var email = $("#cad_email").val();
+	var senha = $("#cad_senha").val();
 	
 	removeClass("#cad_nome", "input-empty");
 	removeClass("#cad_email", "input-empty");
@@ -12,8 +12,8 @@ function teste(){
 
 	var errors = checkEmpty(name, email, senha);
 	if (errors.length > 0){
-		var ItemWithError = document.querySelector("#"+errors);
-		ItemWithError.classList.add("input-empty");
+		var ItemWithError = $("#"+errors);
+		$(ItemWithError).addClass("input-empty");
 		return;
 	}
 
@@ -39,16 +39,16 @@ function checkEmpty(name, email, senha){
 }
 
 function removeClass(id, classe) {
-	document.querySelector(id).classList.remove(classe);
+	$(id).removeClass(classe);
 }
 
 function sendCheck() {
-	var username = document.querySelector("#email").value;
-	var senha = document.querySelector("#senha").value;
+	var username = $("#email").val();
+	var senha = $("#senha").val();
 
 	checkLogin(username, senha)
-	// body...
 }
+
 function checkLogin(username, senha){
 	console.log(username)
 	Object.keys(obj).forEach(
