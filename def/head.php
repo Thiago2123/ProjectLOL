@@ -9,6 +9,7 @@
 <script src="lib/bootstrap-notify-3.1.3/dist/bootstrap-notify.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+<script src="js/initDB.js"></script>
 
 <!-- componentes-->
 <link href="style/css/com/jumbotron.css" rel="stylesheet" type="text/css" />

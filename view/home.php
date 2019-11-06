@@ -6,7 +6,6 @@
             //$connection = connection();
         ?>
         <script type="text/javascript" src="js/functions.js"></script>
-        <!-- <script type="text/javascript" src="js/livro.js"></script> -->
         <title>League of Stars - Home</title>
     </head>
     <body>
@@ -107,22 +106,23 @@
                     <div class="form-group row">
                         <label for="cad_nome" class="col-2 col-form-label">Nome</label>
                         <div class="col-10">
-                            <input type="text" class="form-control" id="cad_nome" placeholder="Nome completo">
+                            <input type="text" class="form-control" id="cad_nome" placeholder="Nome completo" onblur="removeClass('#cad_nome', 'input-empty')">
                         </div>
                         <label for="cad_email" class="col-2 col-form-label">Email</label>
                         <div class="col-10">
-                            <input type="email" class="form-control" id="cad_email" placeholder="Email">
+                            <input type="email" class="form-control" id="cad_email" placeholder="Email" onblur="removeClass('#cad_email', 'input-empty')">
                         </div>
                         <label for="cad_senha" class="col-2 col-form-label">Senha</label>
                         <div class="col-7">
-                            <input type="password" class="form-control" id="cad_senha" placeholder="Senha">
+                            <input type="password" class="form-control" id="cad_senha" placeholder="Senha" nblur="removeClass('#cad_senha', 'input-empty')">
                             <small id="passwordHelpInline" class="text-muted">
                                 A senha deve ter entre 8 e 20 caracteres
                             </small>
                         </div>
                     </div>
+                    <label id="error"></label>
                     <button id="cad_botao" class="btn btn-success btn-block" style="margin-top: 42%" 
-                    onclick="teste()">Cadastrar</button>
+                    onclick="insert('users')">Cadastrar</button>
                 </div>
             </div>
         </div>
