@@ -12,7 +12,7 @@
         <div class="container-fluid no-gutters">
             <div class="navbar row py-0 bg-secondary">
                 <div class="nav btn btn-secondary row">
-                    <div> <img src="../ProjectLOL/img/logo.jpg" class="rounded img-fluid" style="width:50px; height: 30px"></div>
+                    <div> <img src="../ProjectLOL/img/logo.png" class="rounded img-fluid" style="width:150; height: 90px"></div>
                 </div>
                 <div>
                     <div class="form-inline mt-2" style="margin-bottom: auto">
@@ -24,37 +24,61 @@
                     </div>        
                 </div>
             </div>
-            <div class="jumbotron jumbotron">
+            <div class="jumbotron">
                 <div class="row" style="margin: auto">
                     <div class="btn btn-primary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-left"></i></div>
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="text-center mr-0 ml-0">Flamengo <b>0</b> x <b>1</b> Dawnon</div>
+                        <div class="text-center mr-0 ml-0">
+                            <img src="../ProjectLOL/img/Times/Flamengo.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
+                                <b>0</b> x <b>1</b> 
+                            <img src="../ProjectLOL/img/Times/CNB.png" class="rounded img-fluid" style="width:30px; height: 30px">
+                        </div>
                         <div class="text-center font-weight-light">10:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="text-center mr-0 ml-0">Dmg <b>0</b> x <b>1</b> Splice</div>
+                        <div class="text-center mr-0 ml-0">
+                            <img src="../ProjectLOL/img/Times/Pain.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
+                            <b>0</b> x <b>1</b> 
+                            <img src="../ProjectLOL/img/Times/INTZ.png" class="rounded img-fluid" style="width:30px; height: 30px">     
+                        </div>
                         <div class="text-center font-weight-light">11:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
-                        <div class="text-center mr-0 ml-0">CNB <b>0</b> x <b>1</b>Kabum</div>
+                        <div class="text-center mr-0 ml-0">
+                            <img src="../ProjectLOL/img/Times/TeamOne.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
+                            <b>0</b> x <b>1</b>Kabum
+                            <img src="../ProjectLOL/img/Times/Kabum.png" class="rounded img-fluid" style="width:30px; height: 30px">     
+                        </div>
                         <div class="text-center font-weight-light">13:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">04/10</div>
-                        <div class="text-center mr-0 ml-0">Pain Gaming <b>1</b> x <b>0</b> Itnz</div>
+                        <div class="text-center mr-0 ml-0">
+                            <img src="../ProjectLOL/img/Times/Uppercut.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
+                            <b>1</b> x <b>0</b>
+                            <img src="../ProjectLOL/img/Times/Redemption.png" class="rounded img-fluid" style="width:30px; height: 30px">     
+                        </div>
                         <div class="text-center font-weight-light">14:00</div>
                     </div> 
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">04/10</div>
-                        <div class="text-center mr-0 ml-0">Keyd stars <b>1</b> x <b>0</b> Red </div>
+                        <div class="text-center mr-0 ml-0">
+                            <img src="../ProjectLOL/img/Times/Flamengo.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
+                            <b>1</b> x <b>0</b>
+                            <img src="../ProjectLOL/img/Times/Pain.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
+                        </div>
                         <div class="text-center font-weight-light">13:00</div>
                     </div>
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">04/10</div>
-                        <div class="text-center mr-0 ml-0">SKT1 <b>1</b> x <b>0</b> Team Liquid</div>
+                        <div class="text-center mr-0 ml-0">
+                            <img src="../ProjectLOL/img/Times/Redemption.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
+                            <b>1</b> x <b>0</b>
+                            <img src="../ProjectLOL/img/Times/Uppercut.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
+                        </div>
                         <div class="text-center font-weight-light">13:00</div>
                     </div>  
                     <div class="btn btn-primary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-right"></i></div>
@@ -73,27 +97,34 @@
                     </div>
                     <div class="card-group">
                         <div class="card">
-                            <img class="card-img-top" src="../ProjectLOL/img/logo.jpg">
+                            <img class="card-img-top" src="../ProjectLOL/img/Noticia/faker.jpg">
                             <div class="card-body">
                                 <h5 class="card-title">Título do card</h5>
-                                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
-                                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                                <p class="card-text">Faker considerado o melhor jogador do mundo, acaba perdendo para seu time rival. Mas chega ate a seminfinal, podendo até mesmo pegar um terceiro lugar no pódio.</p>
+                                <p class="card-text"><small class="text-muted">Atualizados 5 dias atrás</small></p>
                             </div>
                         </div>
                         <div class="card">
-                            <img class="card-img-top" src="../ProjectLOL/img/logo.jpg">
+                            <img class="card-img-top" src="../ProjectLOL/img/noticia/flx.jpg">
                             <div class="card-body">
                                 <h5 class="card-title">Título do card</h5>
-                                <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-                                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                                <p class="card-text">A primeira Semifinal do Mundial 2019 foi completamente chinesa: Invictus Gaming x FunPlus 
+                                                    Phoenix, a atual campeã mundial contra a atual campeã chinesa. O momento pesou muito mais 
+                                                    do que a história - a FPX garantiu um 3x1 altamente dominante, com gostinho de 3x0, 
+                                                    avançando para a Grande Final do campeonato. Agora, a Fênix aguarda o vencedor de SKT x G2, 
+                                                    a ser disputado no domingo (3).</p>
+                                <p class="card-text"><small class="text-muted">Atualizados 10 dias atrás</small></p>
                             </div>
                         </div>
-                        <div class="card">
-                            <img class="card-img-top" src="../ProjectLOL/img/logo.jpg">
+                        <div class="card">  
+                            <img class="card-img-top" src="../ProjectLOL/img/noticia/flamengo.jpg">
                             <div class="card-body">
                                 <h5 class="card-title">Título do card</h5>
-                                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
-                                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                                <p class="card-text">O Flamengo está fora do Campeonato Mundial 2019. Os Rubro-Negros encerram sua participação com uma vitória e 
+                                                    quatro derrotas, despedindo-se da competição com um gosto amargo. Neste sábado (5), enfrentaram DAMWOM Gaming, da LCK, 
+                                                    e Royal Youth, da TCL. Começaram bem a primeira partida, mas erros de mapa colocaram tudo a perder. As derrotas para a 
+                                                    equipe turca foram diferentes: o FLA não conseguiu desenvolver seu jogo.</p>
+                                <p class="card-text"><small class="text-muted">Atualizados 20 dias atrás</small></p>
                             </div>
                         </div>
                     </div>
@@ -116,13 +147,13 @@
                         <div class="col-7">
                             <input type="password" class="form-control" id="cad_senha" placeholder="Senha" nblur="removeClass('#cad_senha', 'input-empty')">
                             <small id="passwordHelpInline" class="text-muted">
-                                A senha deve ter entre 8 e 20 caracteres
+                                A senha deve ter entre 5 e 10 caracteres
                             </small>
                         </div>
                     </div>
                     <label id="error"></label>
                     <button id="cad_botao" class="btn btn-success btn-block" style="margin-top: 42%" 
-                    onclick="insert('users')">Cadastrar</button>
+                    onclick="insert('users'); teste()">Cadastrar</button>
                 </div>
             </div>
         </div>

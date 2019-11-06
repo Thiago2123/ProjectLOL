@@ -12,8 +12,8 @@
         <div class="container-fluid no-gutters">
             <div class="navbar row py-0 bg-secondary">
                 <div class="nav btn btn-secondary row">
-                    <div style="width:50px; height: 50px">
-                        <img src="../ProjectLOL/img/logo.jpg" class="rounded img-fluid" alt="logo">
+                    <div>
+                    <div> <img src="../ProjectLOL/img/logo.png" class="rounded img-fluid" style="width:150; height: 90px"></div>
                     </div>
                 </div>
                 <div>

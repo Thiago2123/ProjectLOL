@@ -1,6 +1,5 @@
 var obj = {"0":{"name":"pedro","email":"pedrod.ss@hotmail.com", "password":"2131"}}
 
-
 function teste(){
 	var id = +Object.keys(obj)[Object.keys(obj).length-1]+1;
 	var name = $("#cad_nome").val();
@@ -11,21 +10,39 @@ function teste(){
 	removeClass("#cad_email", "input-empty");
 	removeClass("#cad_senha", "input-empty");
 
-
 	var errors = checkEmpty(name, email, senha);
 	if (errors.length > 0){
 		var ItemWithError = $("#"+errors);
 		$(ItemWithError).addClass("input-empty");
 		return;
 	}
-
-
-
 	obj[id] ={
 		'name': name,
 		'email': email,
 		'password': senha
-		};
+	};
+	$.notify({
+				//options
+				icon: 'fas fa-check-circle', 
+				message: 'Cadastrado com sucesso'
+			},{
+				//settings
+				type: 'success',
+				position: "absolute",
+				placement: {
+					from: "bottom", 
+					align: "center"
+				},
+				animate:{
+					enter: "fadeOutUp",
+				},
+				onShow: function() {
+					this.css({'width':'300px','height':'auto'});
+				},
+			});
+	$("#cad_nome").val("");
+	$("#cad_email").val("");
+	$("#cad_senha").val("");
 }
 
 function checkEmpty(name, email, senha){

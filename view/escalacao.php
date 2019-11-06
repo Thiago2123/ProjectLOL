@@ -13,7 +13,7 @@
             <div class="navbar row py-0 bg-secondary">
                 <div class="nav btn btn-secondary row">
                     <div>
-                        <img src="../ProjectLOL/img/logo.jpg" class="rounded img-fluid" style="width:50px; height: 30px">
+                        <img src="../ProjectLOL/img/logo.png" class="rounded img-fluid" style="width:150px; height: 90px">
                     </div>
                 </div>
                 <div>
@@ -37,7 +37,7 @@
                         <div class="ml-1 text-warning"><label>Bem vindo Usuário</label></div>
                     </div> 
                     <div class="row m-auto">
-                        <div class="ml-5 text-warning"><label>R$: 25,00</label></div>
+                        <div class="ml-5 text-success"><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 50</div>
                     </div>       
                 </div>
             </div>
@@ -72,7 +72,7 @@
                         <div class="form-group col-4">
                             <fieldset class="form-group">
                                 <div class="row">
-                                    <legend class="col-form-label col-sm-2 pt-0">Preço:</legend>
+                                    <legend class="col-form-label col-sm-2 pt-0">Valor:</legend>
                                     <div class="col-sm-10">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="0" checked>
@@ -93,62 +93,144 @@
                             </fieldset>
                         </div>
                     </div>
-                    <table class="table table-striped table-dark col-10">
-                        <thead>
-                            <tr>
-                            <th style="width: 10%">Nome</th>
-                            <th style="width: 10%">Time</th>
-                            <th style="width: 5%">Rota</th>
-                            <th style="width: 5%">Valor</th>
-                            <th style="width: 2%"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Brtt</td>
-                                <td>Flamengo</td>
-                                <td>Atirador</td>
-                                <td>25 R$</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
-
-                            </tr>
-                            <tr>
-                                <td>Micão</td>
-                                <td>Intz</td>
-                                <td>Atirador</td>
-                                <td>22 R$</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Robo</td>
-                                <td>Flamengo</td>
-                                <td>Topo</td>
-                                <td>02 R$</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Revolta</td>
-                                <td>Keyd</td>
-                                <td>Selva</td>
-                                <td>10 R$</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Luci</td>
-                                <td>Flamengo</td>
-                                <td>Suporte</td>
-                                <td>20 R$</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Kami</td>
-                                <td>Pain</td>
-                                <td>Meio</td>
-                                <td>37 R$</td>
-                                <td><i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="col-10">
+                        <div class="table-wrapper-scroll-y my-custom-scrollbar" style="position: relative; height: 600px; overflow: auto; display: block;">
+                            <table class="table table-striped table-dark mt-3" style="text-align: center;">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 15%">Jogador</th>
+                                        <th style="width: 10%">Time</th>
+                                        <th style="width: 5%">Rota</th>
+                                        <th style="width: 5%">Valor</th>
+                                        <th style="width: 2%"></th>
+                                    </tr>
+                                </thead>     
+                                <tbody>
+                                    <tr>
+                                        <td colspan= "5">
+                                            <div class="row">
+                                                <div><img src="../ProjectLOL/img/CBLOL/Flamengo/BRTT.png" class="rounded img-fluid" style="width:150px; height: 90px"></div>
+                                                <div style="text-align: left;"><label>FELIPE "<b class="text-info">BRTT</b>" GONÇALVES <br> <br> Idade: 28 <br>Cidade: Rio de Janeiro - RJ</label></div>
+                                                <div style="margin-left: 10%;"><img src="../ProjectLOL/img/Times/Flamengo.png" class="rounded img-fluid" style="width:150px; height: 90px;"></div>
+                                                <div style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Bot.png" class="border border-secondary" style="width:40px; height: 30px"><label> Atirador</label></div>
+                                                <div style="margin-left: 10%;">
+                                                    <i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10 
+                                                    <i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
+                                                </div>
+                                            </div>
+                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan= "5">
+                                            <div class="row">
+                                                <div><img src="../ProjectLOL/img/CBLOL/Intz/Micao.png" class="rounded img-fluid" style="width:150px; height: 90px"></div>
+                                                <div style="text-align: left;"><label>MICAEL "<b class="text-info">MICAO</b>" RODRIGUES <br> <br> Idade: 23 <br>Cidade: Caratinga - MG</label></div>
+                                                <div style="margin-left: 10%;"><img src="../ProjectLOL/img/Times/INTZ.png" class="rounded img-fluid" style="width:130px; height: 90px;"></div>
+                                                <div style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Bot.png" class="border border-secondary" style="width:40px; height: 30px"><label> Atirador</label></div>
+                                                <div style="margin-left: 10%;">
+                                                    <i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10 
+                                                    <i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
+                                                </div>
+                                            </div>
+                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan= "5">
+                                            <div class="row">
+                                                <div><img src="../ProjectLOL/img/CBLOL/Pain/TINOWNS.png" class="rounded img-fluid" style="width:150px; height: 90px"></div>
+                                                <div style="text-align: left;"><label>THIAGO "<b class="text-info">TINOWNS</b>" SARTORI <br> <br> Idade: 22 <br>Cidade: São Paulo - SP</label></div>
+                                                <div style="margin-left: 10%;"><img src="../ProjectLOL/img/Times/Pain.png" class="rounded img-fluid" style="width:130px; height: 90px;"></div>
+                                                <div style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Mid.png" class="border border-secondary" style="width:40px; height: 30px"><label> Meio  </label></div>
+                                                <div style="margin-left: 12%;">
+                                                    <i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10 
+                                                    <i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
+                                                </div>
+                                            </div>
+                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan= "5">
+                                            <div class="row">
+                                                <div><img src="../ProjectLOL/img/CBLOL/TeamOne/TAKESHI.png" class="rounded img-fluid" style="width:150px; height: 90px"></div>
+                                                <div style="text-align: left;"><label>MURILO "<b class="text-info">TAKESHI</b>" ALVES <br> <br> Idade: 26 <br>Cidade: Brasília - DF</label></div>
+                                                <div style="margin-left: 13%;"><img src="../ProjectLOL/img/Times/TeamOne.png" class="rounded img-fluid" style="width:130px; height: 90px;"></div>
+                                                <div style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Mid.png" class="border border-secondary" style="width:40px; height: 30px"><label> Meio  </label></div>
+                                                <div style="margin-left: 12%;">
+                                                    <i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 05 
+                                                    <i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
+                                                </div>
+                                            </div>
+                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan= "5">
+                                            <div class="row">
+                                                <div><img src="../ProjectLOL/img/CBLOL/Uppercut/FITZ.png" class="rounded img-fluid" style="width:150px; height: 90px"></div>
+                                                <div style="text-align: left;"><label>MATEUS "<b class="text-info">FITZ</b>" CAYRES <br> <br> Idade: 24 <br>Cidade: São João de Meriti - RJ </label></div>
+                                                <div style="margin-left: 10%;"><img src="../ProjectLOL/img/Times/Uppercut.png" class="rounded img-fluid" style="width:130px; height: 90px;"></div>
+                                                <div style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Top.png" class="border border-secondary" style="width:40px; height: 30px"><label> Topo  </label></div>
+                                                <div style="margin-left: 12%;">
+                                                    <i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 05 
+                                                    <i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
+                                                </div>
+                                            </div>
+                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan= "5">
+                                            <div class="row">
+                                                <div><img src="../ProjectLOL/img/CBLOL/CNB/HAWK.png" class="rounded img-fluid" style="width:150px; height: 90px"></div>
+                                                <div style="text-align: left;"><label>GABRIEL "<b class="text-info">HAWK</b>" GOMES <br> <br> Idade: 19 <br>Rio de Janeiro - RJ </label></div>
+                                                <div style="margin-left: 13%;"><img src="../ProjectLOL/img/Times/CNB.png" class="rounded img-fluid" style="width:130px; height: 90px;"></div>
+                                                <div style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Sup.png" class="border border-secondary" style="width:40px; height: 30px"><label> Suporte  </label></div>
+                                                <div style="margin-left: 10%;">
+                                                    <i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 05 
+                                                    <i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
+                                                </div>
+                                            </div>
+                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan= "5">
+                                            <div class="row">
+                                                <div><img src="../ProjectLOL/img/CBLOL/Redemption/ZUAO.png" class="rounded img-fluid" style="width:150px; height: 90px"></div>
+                                                <div style="text-align: left;"><label>JOÃO "<b class="text-info">ZUAO</b>" MORAIS <br> <br> Idade: 21 <br>Rio de Janeiro - RJ </label></div>
+                                                <div style="margin-left: 15%;"><img src="../ProjectLOL/img/Times/Redemption.png" class="rounded img-fluid" style="width:130px; height: 90px;"></div>
+                                                <div style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Jg.png" class="border border-secondary" style="width:40px; height: 30px"><label> Caçador  </label></div>
+                                                <div style="margin-left: 10%;">
+                                                    <i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 05 
+                                                    <i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
+                                                </div>
+                                            </div>
+                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan= "5">
+                                            <div class="row">
+                                                <div><img src="../ProjectLOL/img/CBLOL/Kabum/RANGER.png" class="rounded img-fluid" style="width:150px; height: 90px"></div>
+                                                <div style="text-align: left;"><label>FILIPE "<b class="text-info">RANGER</b>" BROMBILLA <br> <br> Idade: 23 <br>Sapucaia do Sul - RS </label></div>
+                                                <div style="margin-left: 10%;"><img src="../ProjectLOL/img/Times/Kabum.png" class="rounded img-fluid" style="width:130px; height: 90px;"></div>
+                                                <div style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Jg.png" class="border border-secondary" style="width:40px; height: 30px"><label> Caçador  </label></div>
+                                                <div style="margin-left: 10%;">
+                                                    <i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 05 
+                                                    <i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
+                                                </div>
+                                            </div>
+                                        
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-4 mt-2">
                     <div class="accordion" id="accordionExample">
