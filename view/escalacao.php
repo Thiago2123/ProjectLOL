@@ -32,7 +32,7 @@
                 <div>
                     <div class="row m-auto">
                         <div>
-                            <img src="../ProjectLOL/img/logo.jpg" class="rounded img-fluid" style="width:50px; height: 30px">
+                        <i class="fas fa-user-circle fa-3x" style="color: secondary"></i>""
                         </div>
                         <div class="ml-1 text-warning"><label>Bem vindo Usuário</label></div>
                     </div> 
