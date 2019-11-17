@@ -6,10 +6,18 @@ firebase.initializeApp({
 
 var db = firebase.firestore();
 
-function insert(coll){
-	db.collection(coll).add({
-		username: document.querySelector("#cad_nome").value,
-		email: document.querySelector("#cad_email").value,
-		senha: document.querySelector("#cad_senha").value
-	})
+function insertOnDb(coll, json){
+	db.collection(coll).add(json)
+}
+
+
+function getDbDocument(coll, field, fieldValue){
+	obj = {}
+	var a = db.collection(coll).where(field, "==", fieldValue).get().then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            // doc.data() is never undefined for query doc snapshots
+            obj[doc.id] = doc.data();
+        });
+    })
+    return obj;   
 }

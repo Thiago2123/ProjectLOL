@@ -98,27 +98,30 @@
                             <table class="table table-striped table-dark mt-3" style="text-align: center;">
                                 <thead>
                                     <tr>
-                                        <th style="width: 15%">Jogador</th>
-                                        <th style="width: 10%">Time</th>
-                                        <th style="width: 5%">Rota</th>
-                                        <th style="width: 5%">Valor</th>
-                                        <th style="width: 2%"></th>
+                                        <th>Jogador</th>
+                                        <th>Time</th>
+                                        <th>Rota</th>
+                                        <th>Valor</th>
                                     </tr>
                                 </thead>     
                                 <tbody>
                                     <tr>
-                                        <td colspan= "5">
+                                        <td>
                                             <div class="row">
-                                                <div><img src="../ProjectLOL/img/CBLOL/Flamengo/BRTT.png" class="rounded img-fluid" style="width:150px; height: 90px"></div>
+                                                <img src="../ProjectLOL/img/CBLOL/Flamengo/BRTT.png" class="rounded img-fluid" style="width:120px">
                                                 <div style="text-align: left;"><label>FELIPE "<b class="text-info">BRTT</b>" GONÇALVES <br> <br> Idade: 28 <br>Cidade: Rio de Janeiro - RJ</label></div>
-                                                <div style="margin-left: 10%;"><img src="../ProjectLOL/img/Times/Flamengo.png" class="rounded img-fluid" style="width:150px; height: 90px;"></div>
-                                                <div style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Bot.png" class="border border-secondary" style="width:40px; height: 30px"><label> Atirador</label></div>
-                                                <div style="margin-left: 10%;">
+                                        </td>
+                                        <td>
+                                            <div><img src="../ProjectLOL/img/Times/Flamengo.png" class="rounded img-fluid" style="width:150px; height: 90px;"></div>
+                                        </td>
+                                        <td>
+                                            <div style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Bot.png" class="border border-secondary" style="width:40px; height: 30px"><label> Atirador</label></div>
+                                        </td>
+                                        <td>
+                                            <div style="margin-left: 10%;">
                                                     <i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10 
                                                     <i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
                                                 </div>
-                                            </div>
-                                        
                                         </td>
                                     </tr>
                                     <tr>

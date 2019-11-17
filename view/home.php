@@ -16,11 +16,12 @@
                 </div>
                 <div>
                     <div class="form-inline mt-2" style="margin-bottom: auto">
+                        <label id="erroBUCETA"></label>
                         <input type="email" class="form-control mb-2 mr-sm-2" id="email" placeholder="Email">
                         <div class="input-group mb-2 mr-sm-2">
                             <input type="password" class="form-control" id="senha" placeholder="Senha">
                         </div>
-                        <button id="log" type="button" class="btn btn-success mb-2" onclick="sendCheck()">Entrar</button>
+                        <button id="log" type="button" class="btn btn-success mb-2" onclick="getUserLogin()">Entrar</button>
                     </div>        
                 </div>
             </div>
@@ -153,7 +154,7 @@
                     </div>
                     <label id="error"></label>
                     <button id="cad_botao" class="btn btn-success btn-block" style="margin-top: 42%" 
-                    onclick="insert('users'); teste()">Cadastrar</button>
+                    onclick="cadastrar();">Cadastrar</button>
                 </div>
             </div>
         </div>
