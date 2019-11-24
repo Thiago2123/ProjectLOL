@@ -34,7 +34,7 @@ function cadastrar(){
 					enter: "fadeOutUp",
 				},
 				onShow: function() {
-					this.css({'width':'300px','height':'auto'});
+					this.css({'width':'auto','height':'auto'});
 				},
 			});
 	$("#cad_nome").val("");
@@ -84,7 +84,6 @@ function getUserLogin() {
 
 	var user = getDbDocument('users', 'email', email);
 
-	
 	setTimeout(function(){ 
 		if(Object.values(user).length == 0){
 		document.querySelector('#erroBUCETA').textContent = 'Credenciais não encontradas'

@@ -32,9 +32,9 @@
                 <div>
                     <div class="row m-auto">
                         <div>
-                        <i class="fas fa-user-circle fa-3x" style="color: secondary"></i>""
+                            <i class="fas fa-user-circle fa-3x" style="color: secondary"></i>
                         </div>
-                        <div class="ml-1 text-warning"><label>Bem vindo Usuário</label></div>
+                        <div class="ml-1 text-warning">"Bem vindo Usuário"</div>
                     </div> 
                     <div class="row m-auto">
                         <div class="ml-5 text-success"><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 50</div>
