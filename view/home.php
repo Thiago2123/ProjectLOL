@@ -16,7 +16,7 @@
                 </div>
                 <div>
                     <div class="form-inline mt-2" style="margin-bottom: auto">
-                        <label id="erroBUCETA"></label>
+                        <label id="erroLogin"></label>
                         <input type="email" class="form-control mb-2 mr-sm-2" id="email" placeholder="Email">
                         <div class="input-group mb-2 mr-sm-2">
                             <input type="password" class="form-control" id="senha" placeholder="Senha">

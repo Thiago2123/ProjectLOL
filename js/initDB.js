@@ -21,3 +21,13 @@ function getDbDocument(coll, field, fieldValue){
     })
     return obj;   
 }
+
+function getFullDocument(coll){
+	obj = {}
+	db.collection(coll).get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        obj[doc.id] = doc.data();
+    });
+});
+	return obj;
+}

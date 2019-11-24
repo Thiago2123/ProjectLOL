@@ -86,14 +86,14 @@ function getUserLogin() {
 
 	setTimeout(function(){ 
 		if(Object.values(user).length == 0){
-		document.querySelector('#erroBUCETA').textContent = 'Credenciais não encontradas'
+		document.querySelector('#erroLogin').textContent = 'Credenciais não encontradas'
 		return;
 		}
 		if (senha == Object.values(user)[0]['password']){
 			window.open('escalacao', '_self');
 			return;
 		}
-		document.querySelector('#erroBUCETA').textContent = 'Credenciais não encontradas'
+		document.querySelector('#erroLogin').textContent = 'Credenciais não encontradas'
 		console.log(Object.values(user)[0]['password']);
 		; }, 1000);
 	
