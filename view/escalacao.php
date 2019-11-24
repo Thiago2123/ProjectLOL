@@ -32,7 +32,7 @@
                 <div>
                     <div class="row m-auto">
                         <div>
-                        <i class="fas fa-user-circle fa-3x" style="color: secondary"></i>""
+                        <i class="fas fa-user-circle fa-3x" style="color: secondary"></i>
                         </div>
                         <div class="ml-1 text-warning"><label>Bem vindo Usuário</label></div>
                     </div> 
@@ -104,26 +104,7 @@
                                         <th>Valor</th>
                                     </tr>
                                 </thead>     
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="row">
-                                                <img src="../ProjectLOL/img/CBLOL/Flamengo/BRTT.png" class="rounded img-fluid" style="width:120px">
-                                                <div style="text-align: left;"><label>FELIPE "<b class="text-info">BRTT</b>" GONÇALVES <br> <br> Idade: 28 <br>Cidade: Rio de Janeiro - RJ</label></div>
-                                        </td>
-                                        <td>
-                                            <div><img src="../ProjectLOL/img/Times/Flamengo.png" class="rounded img-fluid" style="width:150px; height: 90px;"></div>
-                                        </td>
-                                        <td>
-                                            <div style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Bot.png" class="border border-secondary" style="width:40px; height: 30px"><label> Atirador</label></div>
-                                        </td>
-                                        <td>
-                                            <div style="margin-left: 10%;">
-                                                    <i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10 
-                                                    <i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
-                                                </div>
-                                        </td>
-                                    </tr>                                    
+                                <tbody>                                
                                 </tbody>
                             </table>
                         </div>
@@ -223,7 +204,7 @@
             </div>
 
         </div>
-        <div class="fixed-bottom bg-secondary mt-2 text-warning">League of Stars</div>
+        <div class="bottom bg-secondary mt-2 text-warning">League of Stars</div>
         <script src="js/escalation.js"></script>
     </body>
 </html>
