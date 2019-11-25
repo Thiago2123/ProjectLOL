@@ -100,7 +100,7 @@
                         <div class="card">
                             <img class="card-img-top" src="../ProjectLOL/img/Noticia/faker.jpg">
                             <div class="card-body">
-                                <h5 class="card-title">Título do card</h5>
+                                <h5 class="card-title">A ruína do melhor do mundo</h5>
                                 <p class="card-text">Faker considerado o melhor jogador do mundo, acaba perdendo para seu time rival. Mas chega ate a seminfinal, podendo até mesmo pegar um terceiro lugar no pódio.</p>
                                 <p class="card-text"><small class="text-muted">Atualizados 5 dias atrás</small></p>
                             </div>
@@ -108,7 +108,7 @@
                         <div class="card">
                             <img class="card-img-top" src="../ProjectLOL/img/noticia/flx.jpg">
                             <div class="card-body">
-                                <h5 class="card-title">Título do card</h5>
+                                <h5 class="card-title">Região chinesa volta á ficar entre os primeiros lugares</h5>
                                 <p class="card-text">A primeira Semifinal do Mundial 2019 foi completamente chinesa: Invictus Gaming x FunPlus 
                                                     Phoenix, a atual campeã mundial contra a atual campeã chinesa. O momento pesou muito mais 
                                                     do que a história - a FPX garantiu um 3x1 altamente dominante, com gostinho de 3x0, 
@@ -120,7 +120,7 @@
                         <div class="card">  
                             <img class="card-img-top" src="../ProjectLOL/img/noticia/flamengo.jpg">
                             <div class="card-body">
-                                <h5 class="card-title">Título do card</h5>
+                                <h5 class="card-title">Brasil novamente não segue adiante no mundial</h5>
                                 <p class="card-text">O Flamengo está fora do Campeonato Mundial 2019. Os Rubro-Negros encerram sua participação com uma vitória e 
                                                     quatro derrotas, despedindo-se da competição com um gosto amargo. Neste sábado (5), enfrentaram DAMWOM Gaming, da LCK, 
                                                     e Royal Youth, da TCL. Começaram bem a primeira partida, mas erros de mapa colocaram tudo a perder. As derrotas para a 
@@ -158,6 +158,6 @@
                 </div>
             </div>
         </div>
-        <div class="fixed-bottom bg-secondary mt-2 text-warning">League of Stars</div>
+        <div class="bottom bg-secondary mt-2 text-warning">League of Stars</div>
     </body>
 </html>

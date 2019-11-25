@@ -40,8 +40,7 @@ function playerTableRow (players){
 			<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10 
 			<i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
 		</div>
-	</td>
-	`;
+	</td>`;
 	tr.innerHTML = td;
 
 	insertTable(tr);
