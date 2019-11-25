@@ -20,17 +20,13 @@ function createPlayerTable (){
 		for (var i = 0; i < Object.keys(testes).length; i++) {
 			playerTableRow(testes[Object.keys(testes)[i]])
 		}
-	},700)
+	},500)
 }
 
 function playerTableRow (players){
 	var tr = document.createElement('tr');
 	console.log(players)
 	var nickname = players['Nome'].split(' ')[1]
-
-	$('#busca').click(function(){
-	
-	});
 
 	var td = `<td>
 	    <div class="row">
