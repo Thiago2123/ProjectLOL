@@ -34,7 +34,7 @@
                         <div>
                             <i class="fas fa-user-circle fa-3x" style="color: secondary"></i>
                         </div>
-                        <div class="ml-1 text-warning">"Bem vindo Usuário"</div>
+                        <div class="ml-1 text-warning">Bem vindo Usuário</div>
                     </div> 
                     <div class="row m-auto">
                         <div class="ml-5 text-success"><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 50</div>
@@ -125,75 +125,53 @@
                                 <table class="table-xs table-striped table-dark col-10">
                                     <thead>
                                         <tr>
-                                            <th style="width: 10%">Nome</th>
+                                            <th style="width: 20%">Nome</th>
                                             <th style="width: 5%">Rota</th>
-                                            <th style="width: 12%"></th>
+                                            <th style="width: 5%"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Mylon</td>
-                                            <td>Topo</td>
-                                            <td><select class="form-control" id="reserva">
-                                                    <option value="T">Titular</option>
-                                                    <option value="R">Reserva</option>
-                                                </select>
+                                            <td style="text-align: left;">
+                                                <img src="../ProjectLOL/img/CBLOL/Flamengo/BRTT.png" class="rounded img-fluid" style="width:150px; height: 90px;">
+                                                <b class="text-success">BRTT</b>
                                             </td>
+                                            <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Top.png" class="border border-secondary" style="width:40px; height: 30px"></td>
+                                            <td><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10  </td>
                                         </tr>
                                         <tr>
-                                            <td>Minerva</td>
-                                            <td>Selva</td>
-                                            <td><select class="form-control" id="reserva">
-                                                    <option value="T">Titular</option>
-                                                    <option value="R">Reserva</option>
-                                                </select>
+                                            <td style="text-align: left;">
+                                                <img src="../ProjectLOL/img/CBLOL/INTZ/MICAO.png" class="rounded img-fluid" style="width:150px; height: 90px;">
+                                                <b class="text-success">MICÂO</b>
                                             </td>
+                                            <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Jg.png" class="border border-secondary" style="width:40px; height: 30px"></td>
+                                            <td><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10  </td>
                                         </tr>
                                         <tr>
-                                            <td>Kami</td>
-                                            <td>Meio</td>
-                                            <td><select class="form-control" id="reserva">
-                                                    <option value="T">Titular</option>
-                                                    <option value="R">Reserva</option>
-                                                </select>
+                                            <td style="text-align: left;">
+                                                <img src="../ProjectLOL/img/CBLOL/Flamengo/LUCI.png" class="rounded img-fluid" style="width:150px; height: 90px;">
+                                                <b class="text-success">LUCI</b>
                                             </td>
+                                            <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Mid.png" class="border border-secondary" style="width:40px; height: 30px"></td>
+                                            <td><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10  </td>
                                         </tr>
                                         <tr>
-                                            <td>Diud</td>
-                                            <td>Suporte</td>
-                                            <td><select class="form-control" id="reserva">
-                                                    <option value="T">Titular</option>
-                                                    <option value="R">Reserva</option>
-                                                </select>
+                                            <td style="text-align: left;">
+                                                <img src="../ProjectLOL/img/CBLOL/Pain/ESA.png" class="rounded img-fluid" style="width:150px; height: 90px;">
+                                                <b class="text-success">ESA</b>
                                             </td>
+                                            <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Bot.png" class="border border-secondary" style="width:40px; height: 30px"></td>
+                                            <td><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10  </td>
                                         </tr>
                                         <tr>
-                                            <td>Brtt</td>
-                                            <td>Atirador</td>
-                                            <td><select class="form-control" id="reserva">
-                                                    <option value="T">Titular</option>
-                                                    <option value="R">Reserva</option>
-                                                </select>
+                                            <td style="text-align: left;">
+                                                <img src="../ProjectLOL/img/CBLOL/CNB/PBO.png" class="rounded img-fluid" style="width:150px; height: 90px;">
+                                                <b class="text-success">PBO</b>
                                             </td>
+                                            <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Sup.png" class="border border-secondary" style="width:40px; height: 30px"></td>
+                                            <td><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10  </td>
                                         </tr>
-                                        <tr>
-                                            <td>Robo</td>
-                                            <td>Topo</td>
-                                            <td><select class="form-control" id="reserva">
-                                                    <option value="T">Titular</option>
-                                                    <option value="R" selected>Reserva</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Yoda</td>
-                                            <td>Meio</td>
-                                            <td><select class="form-control" id="reserva">
-                                                    <option value="T">Titular</option>
-                                                    <option value="R" selected>Reserva</option>
-                                                </select>
-                                            </td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                                 </div>
