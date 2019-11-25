@@ -13,7 +13,7 @@ function createPlayerTable (){
 		for (var i = 0; i < Object.keys(testes).length; i++) {
 			playerTableRow(testes[Object.keys(testes)[i]])
 		}
-	},700)
+	},500)
 }
 
 function playerTableRow (players){
@@ -37,7 +37,7 @@ function playerTableRow (players){
 	</td>
 	<td>
 		<div style="margin-left: 10%;">
-			<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10 
+			<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> ${players['Valor']} 
 			<i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
 		</div>
 	</td>
