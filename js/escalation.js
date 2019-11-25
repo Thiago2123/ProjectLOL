@@ -1,6 +1,13 @@
 window.onload = function() {
-	createPlayerTable()
+	createPlayerTable();
+	
 }
+
+$('#nometime').click(function(){
+	$('#nometime').attr('contenteditable', true);
+});
+
+
 
 function getPlayers (){
 	var players = getFullDocument('players');
@@ -21,6 +28,10 @@ function playerTableRow (players){
 	console.log(players)
 	var nickname = players['Nome'].split(' ')[1]
 
+	$('#busca').click(function(){
+	
+	});
+
 	var td = `<td>
 	    <div class="row">
 			<img src="../ProjectLOL/img/CBLOL/${players['Time'].split(' ')[0]}/${nickname}.png" class="rounded img-fluid img-player">
@@ -37,7 +48,7 @@ function playerTableRow (players){
 	</td>
 	<td>
 		<div style="margin-left: 10%;">
-			<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10 
+			<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> ${players['Valor']}
 			<i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
 		</div>
 	</td>`;

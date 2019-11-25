@@ -43,7 +43,7 @@
             </div>
             <div class="row">
                 <div class="col-8 mt-4">
-                    <div id="filtros" class="row">
+                    <div id="filtros" class="row offset-4">
                         <div class="form-group col-2">
                             <label for="Rota">Rota</label>
                             <select class="form-control" id="Rota">
@@ -71,21 +71,21 @@
                         </div>
                         <div class="form-group col-4">
                             <fieldset class="form-group">
-                                <div class="row">
+                                <div class="row" id='busca'>
                                     <legend class="col-form-label col-sm-2 pt-0">Valor:</legend>
                                     <div class="col-sm-10">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="0" checked>
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="rbd-5" value="5">
                                             <label class="form-check-label" for="gridRadios1">
                                                 Abaixo de 10$
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="10">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="rbd-10" value="10">
                                             <label class="form-check-label" for="gridRadios2">Maior de 10$ </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="20">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="rbd-11" value="15">
                                             <label class="form-check-label" for="gridRadios3">Maiores de 20$</label>
                                         </div>
                                     </div>
@@ -113,14 +113,11 @@
                 <div class="col-4 mt-2">
                     <div class="accordion" id="accordionExample">
                         <div class="card">
-                            <div class="card-header" id="headingOne">
+                            <div class="card-header row">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="fas fa-plus"></i> Nome do time
-                                    </button>
+                                    <i class="fas fa-pen" style="color: blue;"></i><label class="ml-2" id='nometime'> Nome do time </label>
                                 </h5>
                             </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
                                 <table class="table-xs table-striped table-dark col-10">
                                     <thead>
@@ -171,11 +168,9 @@
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Sup.png" class="border border-secondary" style="width:40px; height: 30px"></td>
                                             <td><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10  </td>
                                         </tr>
-                                        
                                     </tbody>
                                 </table>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
