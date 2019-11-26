@@ -36,7 +36,7 @@
                         <div>
                             <i class="fas fa-user-circle fa-3x" style="color: secondary"></i>
                         </div>
-                        <div class="ml-1 text-warning">Bem vindo Usuário</div>
+                        <div id="usuario-div" class="ml-1 text-warning">Bem vindo Usuário</div>
                     </div> 
                     <div class="row m-auto">
                         <div id="valorteste" class="ml-5 text-success"><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 50</div>
@@ -172,7 +172,7 @@
                                         <button id="log" type="button" class="btn btn-success mb-2" onclick="salvar_time()">Salvar time</button>
                                     </div>
                                     <div class="col-3">
-                                        <label>Total:  <b>50</b> </label>
+                                        <label>Total:  <b id="valorTotal">50</b> </label>
                                     </div>
                                 </div>
                             </div>

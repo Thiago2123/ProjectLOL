@@ -1,6 +1,9 @@
+var user = $("#usuario-div");
+
 window.onload = function() {
 	createPlayerTable();
-	
+	console.log(user)
+	user[0].textContent = `Bem-vindo ${localStorage.getItem('login')}`
 }
 
 $('#nometime').click(function(){
@@ -84,5 +87,6 @@ function func(val) {
 
 function atualizaTotal(valor){
 	var totalFinal = $("#valorteste")[0].textContent;
-	console.log(totalFinal-(+valor))	
+	var fieldTotal = $('#valorTotal')[0]
+	fieldTotal.textContent = (+totalFinal)-(+valor)
 }

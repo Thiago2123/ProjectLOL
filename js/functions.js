@@ -91,10 +91,10 @@ function getUserLogin() {
 		return;
 		
 		}
-		console.log(Object.values(user)[0]['name']);
+		console.log();
 		if (senha == Object.values(user)[0]['password']){
 			window.open('escalacao', '_self');
-			localStorage.setItem('login','logado');
+			localStorage.setItem('login',Object.values(user)[0]['name']);
 			return;
 		}
 		document.querySelector('#erroLogin').textContent = 'Credenciais não encontradas'
