@@ -4,6 +4,7 @@
             require("../def/head.php");
             require("../def/function.php");
             //$connection = connection();
+            
         ?>
         <script type="text/javascript" src="js/functions.js"></script>
         <title>League of Stars - Home</title>
@@ -49,7 +50,7 @@
                     <div class="div_jogos border border-danger m-1 p-1">
                         <div class="text-center font-weight-light">03/10</div>
                         <div class="text-center mr-0 ml-0">
-                            <img src="../ProjectLOL/img/Times/TeamOne.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
+                            <img src="../ProjectLOL/img/Times/Team.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
                             <b>0</b> x <b>1</b>Kabum
                             <img src="../ProjectLOL/img/Times/Kabum.png" class="rounded img-fluid" style="width:30px; height: 30px">     
                         </div>

@@ -4,6 +4,8 @@
             require("../def/head.php");
             require("../def/function.php");
             //$connection = connection();
+
+
         ?>
         <!-- <script type="text/javascript" src="js/livro.js"></script> -->
         <title>League of Stars - Escalação</title>

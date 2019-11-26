@@ -87,10 +87,13 @@ function getUserLogin() {
 	setTimeout(function(){ 
 		if(Object.values(user).length == 0){
 		document.querySelector('#erroLogin').textContent = 'Credenciais não encontradas'
+		localStorage.clear();
 		return;
+		
 		}
 		if (senha == Object.values(user)[0]['password']){
 			window.open('escalacao', '_self');
+			localStorage.setItem('login','logado');
 			return;
 		}
 		document.querySelector('#erroLogin').textContent = 'Credenciais não encontradas'
