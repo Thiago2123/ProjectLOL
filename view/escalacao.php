@@ -39,13 +39,13 @@
                         <div class="ml-1 text-warning">Bem vindo Usuário</div>
                     </div> 
                     <div class="row m-auto">
-                        <div class="ml-5 text-success"><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 50</div>
+                        <div id="valorteste" class="ml-5 text-success"><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 50</div>
                     </div>       
                 </div>
             </div>
             <div class="row">
                 <div class="col-8 mt-4">
-                    <div id="filtros" class="row offset-4">
+                    <div id="filtros" class="row">
                         <div class="form-group col-2">
                             <label for="Rota">Rota</label>
                             <select class="form-control" id="Rota">
@@ -121,54 +121,49 @@
                                 </h5>
                             </div>
                                 <div class="card-body">
-                                <table class="table-xs table-striped table-dark col-10">
+                                <table id="table-time" class="table-xs table-striped table-dark col-12">
                                     <thead>
                                         <tr>
-                                            <th style="width: 20%">Nome</th>
-                                            <th style="width: 5%">Rota</th>
-                                            <th style="width: 5%"></th>
+                                            <th>Nome</th>
+                                            <th>Rota</th>
+                                            <th>Valor</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td style="text-align: left;">
-                                                <img src="../ProjectLOL/img/CBLOL/Flamengo/BRTT.png" class="rounded img-fluid" style="width:150px; height: 90px;">
-                                                <b class="text-success">BRTT</b>
+                                            <td style="text-align: center;">
+                                                <b class="text-success"> Adicione um Topo</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Top.png" class="border border-secondary" style="width:40px; height: 30px"></td>
-                                            <td><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10  </td>
+                                            <td class="valor-comprados"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align: left;">
-                                                <img src="../ProjectLOL/img/CBLOL/INTZ/MICAO.png" class="rounded img-fluid" style="width:150px; height: 90px;">
-                                                <b class="text-success">MICÂO</b>
+                                            <td style="text-align: center;">
+                                                <b class="text-success">Adicione um Selva</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Jg.png" class="border border-secondary" style="width:40px; height: 30px"></td>
-                                            <td><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10  </td>
+                                            <td class="valor-comprados"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align: left;">
-                                                <img src="../ProjectLOL/img/CBLOL/Flamengo/LUCI.png" class="rounded img-fluid" style="width:150px; height: 90px;">
-                                                <b class="text-success">LUCI</b>
+                                            <td style="text-align: center;">
+                                                <b class="text-success"> Adicione um Meio </b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Mid.png" class="border border-secondary" style="width:40px; height: 30px"></td>
-                                            <td><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10  </td>
+                                            <td class="valor-comprados"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align: left;">
-                                                <img src="../ProjectLOL/img/CBLOL/Pain/ESA.png" class="rounded img-fluid" style="width:150px; height: 90px;">
-                                                <b class="text-success">ESA</b>
+                                            <td style="text-align: center;">
+                                                <b class="text-success">Adicione um Atirador</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Bot.png" class="border border-secondary" style="width:40px; height: 30px"></td>
-                                            <td><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10  </td>
+                                            <td class="valor-comprados"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align: left;">
-                                                <img src="../ProjectLOL/img/CBLOL/CNB/PBO.png" class="rounded img-fluid" style="width:150px; height: 90px;">
-                                                <b class="text-success">PBO</b>
+                                            <td style="text-align: center;">
+                                                <b class="text-success">Adicione um Suporte</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Sup.png" class="border border-secondary" style="width:40px; height: 30px"></td>
-                                            <td><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 10  </td>
+                                            <td class="valor-comprados"> 0 </td>
                                         </tr>
                                     </tbody>
                                 </table>

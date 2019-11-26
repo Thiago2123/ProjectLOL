@@ -25,7 +25,6 @@ function createPlayerTable (){
 
 function playerTableRow (players){
 	var tr = document.createElement('tr');
-	console.log(players)
 	var nickname = players['Nome'].split(' ')[1]
 
 	var td = `<td>
@@ -45,7 +44,7 @@ function playerTableRow (players){
 	<td>
 		<div style="margin-left: 10%;">
 			<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> ${players['Valor']}
-			<i class="fas fa-shopping-cart"  style="cursor:pointer" title="Comprar"></i> 
+			<i onClick="func(this)" class="fas fa-shopping-cart compradores" style="cursor:pointer" title="Comprar"></i> 
 		</div>
 	</td>`;
 	tr.innerHTML = td;
@@ -55,6 +54,33 @@ function playerTableRow (players){
 
 function insertTable (tr){
 	var tbody = document.querySelector('#table-players tbody');
-	console.log(tbody)
 	tbody.appendChild(tr)
+}
+
+
+function func(val) {
+	var tds = val.closest('tr').querySelectorAll('td');
+	var nome = tds[0].querySelector('b').textContent;
+	var rota = tds[2].querySelector('img').getAttribute('src');
+	var valor = tds[3].textContent
+
+	var tabela = $("#table-time").find(`[src='${rota}']`).closest('tr')[0];
+
+	var tabelaTd = tabela.querySelectorAll('td');
+
+	tabelaTd[0].textContent = nome;
+
+	tabelaTd[2].textContent = valor;
+
+	var comprados = $('.valor-comprados');
+	var total = 0
+	for (let i = 0; i<comprados.length; i++){
+    	total = (+total) + (+comprados[i].textContent);
+	}
+	atualizaTotal(total);
+}
+
+function atualizaTotal(valor){
+	var totalFinal = $("#valorteste")[0].textContent;
+	console.log(totalFinal-(+valor))
 }
