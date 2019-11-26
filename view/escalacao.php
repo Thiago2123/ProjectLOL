@@ -124,42 +124,42 @@
                                 <table id="table-time" class="table-xs table-striped table-dark col-12">
                                     <thead>
                                         <tr>
-                                            <th>Nome</th>
+                                            <th>Jogador</th>
                                             <th>Rota</th>
                                             <th>Valor</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td style="text-align: center;">
-                                                <b class="text-success"> Adicione um Topo</b>
+                                            <td>
+                                                <b class="text-success "> Adicione um Topo</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Top.png" class="border border-secondary" style="width:40px; height: 30px"></td>
                                             <td class="valor-comprados"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align: center;">
+                                            <td>
                                                 <b class="text-success">Adicione um Selva</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Jg.png" class="border border-secondary" style="width:40px; height: 30px"></td>
                                             <td class="valor-comprados"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align: center;">
+                                            <td>
                                                 <b class="text-success"> Adicione um Meio </b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Mid.png" class="border border-secondary" style="width:40px; height: 30px"></td>
                                             <td class="valor-comprados"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align: center;">
+                                            <td>
                                                 <b class="text-success">Adicione um Atirador</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Bot.png" class="border border-secondary" style="width:40px; height: 30px"></td>
                                             <td class="valor-comprados"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td style="text-align: center;">
+                                            <td>
                                                 <b class="text-success">Adicione um Suporte</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Sup.png" class="border border-secondary" style="width:40px; height: 30px"></td>
@@ -167,14 +167,22 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                                <div class="row mt-1">
+                                    <div class="col-9">
+                                        <button id="log" type="button" class="btn btn-success mb-2" onclick="salvar_time()">Salvar time</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <label>Total:  <b>50</b> </label>
+                                    </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="bottom bg-secondary mt-2 text-warning">League of Stars</div>
+        <div class="bottom bg-secondary mt-2 text-warning" style="text-align: center;">League of Stars</div>
         <script src="js/escalation.js"></script>
     </body>
 </html>

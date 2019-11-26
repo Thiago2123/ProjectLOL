@@ -55,17 +55,18 @@
                         <tbody>
                             <tr>
                             <th style="width: 20%">Nome</th>
-                            <th style="width: 20%">Minha posição</th>
                             <th style="width: 20%">Quantidade de jogadores</th>
+                            </tr>
+                            <tr onclick="$('#modal_info_liga').modal('show')" style="cursor: pointer">
+                                <td>Champions</td>
+                                <td>200</td>
                             </tr>
                             <tr onclick="carregarLiga(idLiga)" style="cursor: pointer">
                                 <td>Os Sapão</td>
-                                <td>10.000</td>
                                 <td>70.000</td>
                             </tr>
                             <tr onclick="carregarLiga(idLiga)" style="cursor: pointer">
                                 <td>Família</td>
-                                <td>1</td>
                                 <td>5</td>
                             </tr>
                         </tbody>
@@ -82,11 +83,6 @@
                             <th style="width: 20%">Minha posição</th>
                             <th style="width: 20%">Quantidade de jogadores</th>
                             </tr>
-                            <tr onclick="$('#modal_info_liga').modal('show')" style="cursor: pointer">
-                                <td>Champions</td>
-                                <td>3°</td>
-                                <td>200</td>
-                            </tr>
                             <tr onclick="carregarLiga(idLiga)" style="cursor: pointer">
                                 <td>FMU</td>
                                 <td>6°</td>
@@ -97,7 +93,7 @@
                 </div>
             </div>
         </div>
-        <div class="fixed-bottom bg-secondary mt-2 text-warning">League of Stars</div>
+        <div class="fixed-bottom bg-secondary mt-2 text-warning"  style="text-align: center;">League of Stars</div>
 
 
             <!--------------------------------      
@@ -133,7 +129,7 @@
                                             <td style="text-align: center">02° <i class="fas fa-arrow-up" style="color: green"></i></td>
                                         </tr>
                                         <tr class="table-primary">
-                                            <td style="text-align: center">Usuário</td>
+                                            <td style="text-align: center">Zeca</td>
                                             <td style="text-align: center">03° <i class="fas fa-arrow-up" style="color: green"></i></td>
                                         </tr>
                                         <tr>

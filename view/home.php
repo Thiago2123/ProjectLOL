@@ -17,20 +17,20 @@
                 </div>
                 <div>
                     <div class="form-inline mt-2" style="margin-bottom: auto">
-                        <label id="erroLogin"></label>
                         <input type="email" class="form-control mb-2 mr-sm-2" id="email" placeholder="Email">
                         <div class="input-group mb-2 mr-sm-2">
                             <input type="password" class="form-control" id="senha" placeholder="Senha">
                         </div>
                         <button id="log" type="button" class="btn btn-success mb-2" onclick="getUserLogin()">Entrar</button>
                     </div>        
+                        <label id="erroLogin"  style="color: red; text-shadow: 0px 1px rgb(125 125 125); margin: 0"></label>
                 </div>
             </div>
             <div class="jumbotron">
                 <div class="row" style="margin: auto">
-                    <div class="btn btn-primary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-left"></i></div>
+                    <div class="btn btn-secondary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-left" style="color: rgb(165,165,165);"></i></div>
                     <div class="div_jogos border border-danger m-1 p-1">
-                        <div class="text-center font-weight-light">03/10</div>
+                        <div class="text-center font-weight-light">03/11</div>
                         <div class="text-center mr-0 ml-0">
                             <img src="../ProjectLOL/img/Times/Flamengo.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
                                 <b>0</b> x <b>1</b> 
@@ -39,7 +39,7 @@
                         <div class="text-center font-weight-light">10:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
-                        <div class="text-center font-weight-light">03/10</div>
+                        <div class="text-center font-weight-light">03/11</div>
                         <div class="text-center mr-0 ml-0">
                             <img src="../ProjectLOL/img/Times/Pain.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
                             <b>0</b> x <b>1</b> 
@@ -48,16 +48,16 @@
                         <div class="text-center font-weight-light">11:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
-                        <div class="text-center font-weight-light">03/10</div>
+                        <div class="text-center font-weight-light">04/11</div>
                         <div class="text-center mr-0 ml-0">
                             <img src="../ProjectLOL/img/Times/Team.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
-                            <b>0</b> x <b>1</b>Kabum
+                            <b>0</b> x <b>1</b>
                             <img src="../ProjectLOL/img/Times/Kabum.png" class="rounded img-fluid" style="width:30px; height: 30px">     
                         </div>
                         <div class="text-center font-weight-light">13:00</div>
                     </div>  
                     <div class="div_jogos border border-danger m-1 p-1">
-                        <div class="text-center font-weight-light">04/10</div>
+                        <div class="text-center font-weight-light">04/11</div>
                         <div class="text-center mr-0 ml-0">
                             <img src="../ProjectLOL/img/Times/Uppercut.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
                             <b>1</b> x <b>0</b>
@@ -66,7 +66,7 @@
                         <div class="text-center font-weight-light">14:00</div>
                     </div> 
                     <div class="div_jogos border border-danger m-1 p-1">
-                        <div class="text-center font-weight-light">04/10</div>
+                        <div class="text-center font-weight-light">05/11</div>
                         <div class="text-center mr-0 ml-0">
                             <img src="../ProjectLOL/img/Times/Flamengo.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
                             <b>1</b> x <b>0</b>
@@ -75,7 +75,7 @@
                         <div class="text-center font-weight-light">13:00</div>
                     </div>
                     <div class="div_jogos border border-danger m-1 p-1">
-                        <div class="text-center font-weight-light">04/10</div>
+                        <div class="text-center font-weight-light">05/11</div>
                         <div class="text-center mr-0 ml-0">
                             <img src="../ProjectLOL/img/Times/Redemption.png" class="rounded img-fluid" style="width:30px; height: 30px"> 
                             <b>1</b> x <b>0</b>
@@ -83,19 +83,13 @@
                         </div>
                         <div class="text-center font-weight-light">13:00</div>
                     </div>  
-                    <div class="btn btn-primary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-right"></i></div>
+                    <div class="btn btn-secondary" style="margin: auto; padding: 21px 5px;"><i class="fas fa-arrow-right" style="color: rgb(165,165,165);"></i></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-7 border border-danger rounded" id="noticias">
-                    <div class="row">
-                        <h4 style="margin-inline-start: auto;">Notícias</h4>
-                        <div class="btn-toolbar">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-secondary"><i class="fas fa-arrow-left"></i></button>
-                                <button type="button" class="btn btn-secondary"><i class="fas fa-arrow-right"></i></button>
-                            </div>
-                        </div>
+                    <div>
+                        <h4 style="text-align: center;">Notícias</h4>
                     </div>
                     <div class="card-group">
                         <div class="card">
@@ -148,17 +142,14 @@
                         <label for="cad_senha" class="col-2 col-form-label">Senha</label>
                         <div class="col-7">
                             <input type="password" class="form-control" id="cad_senha" placeholder="Senha" nblur="removeClass('#cad_senha', 'input-empty')">
-                            <small id="passwordHelpInline" class="text-muted">
-                                A senha deve ter entre 5 e 10 caracteres
-                            </small>
                         </div>
                     </div>
-                    <label id="error"></label>
+                    <small id="error" style="color: red"></small>
                     <button id="cad_botao" class="btn btn-success btn-block" style="margin-top: 42%" 
                     onclick="cadastrar();">Cadastrar</button>
                 </div>
             </div>
         </div>
-        <div class="bottom bg-secondary mt-2 text-warning">League of Stars</div>
+        <div class="bottom bg-secondary mt-2 text-warning" style="text-align: center;">League of Stars</div>
     </body>
 </html>

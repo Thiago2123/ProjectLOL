@@ -20,7 +20,7 @@ function createPlayerTable (){
 		for (var i = 0; i < Object.keys(testes).length; i++) {
 			playerTableRow(testes[Object.keys(testes)[i]])
 		}
-	},500)
+	},800)
 }
 
 function playerTableRow (players){
@@ -59,6 +59,8 @@ function insertTable (tr){
 
 
 function func(val) {
+	var icone = '<i class="fas fa-times" style="color: red; cursor: pointer; text-shadow: 2px 2px darkred;" title="Tirar do time" onclick="remover()"></i>';
+	
 	var tds = val.closest('tr').querySelectorAll('td');
 	var nome = tds[0].querySelector('b').textContent;
 	var rota = tds[2].querySelector('img').getAttribute('src');
@@ -68,7 +70,7 @@ function func(val) {
 
 	var tabelaTd = tabela.querySelectorAll('td');
 
-	tabelaTd[0].textContent = nome;
+	tabelaTd[0].innerHTML = icone +' '+ nome;
 
 	tabelaTd[2].textContent = valor;
 
@@ -82,5 +84,5 @@ function func(val) {
 
 function atualizaTotal(valor){
 	var totalFinal = $("#valorteste")[0].textContent;
-	console.log(totalFinal-(+valor))
+	console.log(totalFinal-(+valor))	
 }
