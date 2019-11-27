@@ -154,7 +154,6 @@ function remover(val){
 
 function salvar_time() {
 	var times = document.querySelectorAll('#table-time tbody tr td');
-<<<<<<< HEAD
 	for (var i = 0; i< times.length; i++){
 		if(times[i].textContent.indexOf('Adicione') > 0){
 			alert(times[i].textContent);
