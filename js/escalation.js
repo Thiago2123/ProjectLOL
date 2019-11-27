@@ -166,7 +166,6 @@ function checaValores(valor){
 	var a = $('#table-players tbody tr');
 	console.log(a)
 	for(var i = 0; i<a.length ; i++){
-		console.log('AAAAAAAAAAAAAA')
 		var td = a[i].querySelectorAll('td');
 		var val = a[i].querySelectorAll('td')[3].textContent
 		console.log(val)
@@ -206,7 +205,26 @@ function salvar_time() {
 	var times = document.querySelectorAll('#table-time tbody tr td');
 	for (var i = 0; i< times.length; i++){
 		if(times[i].textContent.indexOf('Adicione') > 0){
-			alert(times[i].textContent);
+			$.notify({
+				//options
+				icon: 'fas fa-exclamation', 
+				message: times[i].textContent
+			},{
+				//settings
+				type: 'danger',
+				position: "absolute",
+				placement: {
+					from: "bottom", 
+					align: "right"
+				},
+				animate:{
+					enter: "fadeOutUp",
+				},
+				onShow: function() {
+					this.css({'width':'auto','height':'auto', 'font-weight': 'bold'});
+				},
+			});
+			//alert(times[i].textContent);
 			return
 		}
 	}
