@@ -1,4 +1,11 @@
 window.onload = function() {
+    if (localStorage.length > 0){
+	}else{
+		alert('faça o login')
+		window.location.href = 'home'
+		return false
+    }
+    
     user = $("#usuario-div");
     user[0].textContent = `Bem-vindo ${localStorage.getItem('login')}`
 

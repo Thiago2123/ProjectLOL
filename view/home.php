@@ -4,8 +4,14 @@
             require("../def/head.php");
             require("../def/function.php");
             //$connection = connection();
-            
         ?>
+        <script>
+                document.addEventListener('keydown', function(e) {
+                    if(e.key == "Enter"){
+                        document.getElementById("w").click();
+                    }
+                });
+    </script>
         <script type="text/javascript" src="js/functions.js"></script>
         <title>League of Stars - Home</title>
     </head>
@@ -21,7 +27,7 @@
                         <div class="input-group mb-2 mr-sm-2">
                             <input type="password" class="form-control" id="senha" placeholder="Senha">
                         </div>
-                        <button id="log" type="button" class="btn btn-success mb-2" onclick="getUserLogin()">Entrar</button>
+                        <button id="w" type="button" class="btn btn-success mb-2" onclick="getUserLogin()">Entrar</button>
                     </div>        
                         <label id="erroLogin"  style="color: red; text-shadow: 0px 1px rgb(125 125 125); margin: 0"></label>
                 </div>

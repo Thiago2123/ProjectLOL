@@ -1,4 +1,12 @@
 window.onload = function() {
+	if (localStorage.length > 0){
+		
+	}else{
+		alert('faça o login')
+		window.location.href = 'home'
+		return false
+	}
+
 	var user = $("#usuario-div");
 	var money = $("#valorteste");
 	createPlayerTable()
@@ -11,11 +19,12 @@ window.onload = function() {
 		money[0].innerHTML = `<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> ${Object.values(moneyUser)[0]['Valor']}` 	
 		
 		var teamList = Object.keys(Object.values(moneyUser)[0]['time'])
-
+		var time = document.querySelector("#nometime");
 		var items = Object.values(moneyUser)[0]['time']
+		time.textContent = items["time"]
 
 		for (var i = 0; i < teamList.length; i++) {
-			if (teamList[i] != 'Nome'){
+			if (teamList[i] != 'time'){
 				if (items[teamList[i]] != ""){
 					if (items[teamList[i]].indexOf('Valor') >= 0){
 						$('#'+teamList[i])[0].textContent = items[teamList[i]]
@@ -27,7 +36,7 @@ window.onload = function() {
 			}
 		}
 		}, 300)
-	
+		valoresParaTotal()
 		}, 500)
 
 
@@ -54,14 +63,15 @@ function getUserData (){
 	money[0].innerHTML = `<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> ${Object.values(moneyUser)[0]['Valor']}` 	
 	
 	var teamList = Object.keys(Object.values(moneyUser)[0]['time'])
-
+	var time = document.querySelector("#nometime")
 	var items = Object.values(moneyUser)[0]['time']
+	time.textContent = items["time"]
 
 	for (var i = 0; i < teamList.length; i++) {
-		if (teamList[i] != 'Nome'){
+		if (teamList[i] != 'time'){
 			if (items[teamList[i]] != ""){
-				console.log(teamList[i].indexOf('Valor'))
-				console.log(teamList[i])
+				//console.log(teamList[i].indexOf('Valor'))
+				//console.log(teamList[i].indexOf('time'))
 				if (+teamList[i].indexOf('Valor') >= 0){
 					$('#'+teamList[i])[0].textContent = items[teamList[i]]
 				}
@@ -207,7 +217,7 @@ function salvar_time() {
 		if(times[i].textContent.indexOf('Adicione') > 0){
 			$.notify({
 				//options
-				icon: 'fas fa-exclamation', 
+				icon: 'fas fa-check-circle', 
 				message: times[i].textContent
 			},{
 				//settings
@@ -229,6 +239,7 @@ function salvar_time() {
 		}
 	}
 
+	var time = document.querySelector('#nometime').textContent;
 	var top = document.querySelector('#table-time #Top').textContent;
 	var jg = document.querySelector('#table-time #Jg').textContent;
 	var mid = document.querySelector('#table-time #Mid').textContent;
@@ -251,8 +262,28 @@ function salvar_time() {
 				'Valor-Jg': jgValue,
 				'Valor-Mid': midValue,
 				'Valor-Bot': botValue,
-				'Valor-Sup': supValue}}
+				'Valor-Sup': supValue,
+				'time' : time}}
 
 	updateDb('users', obj, localStorage.getItem('id'))
+	$.notify({
+		//options
+		icon: 'fas fa-exclamation', 
+		message: 'Time salvo com sucesso'
+	},{
+		//settings
+		type: 'success',
+		position: "absolute",
+		placement: {
+			from: "top", 
+			align: "right"
+		},
+		animate:{
+			enter: "fadeOutUp",
+		},
+		onShow: function() {
+			this.css({'width':'auto','height':'auto', 'font-weight': 'bold'});
+		},
+	});
 
 }

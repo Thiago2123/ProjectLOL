@@ -18,9 +18,6 @@
                 </div>
                 <div>
                     <ul class="nav nav-pills nav-fill">
-                        <li class="nav-item ">
-                            <a class="nav-link text-warning" href="home">Página Inicial</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-warning" href="escalacao">Escalação</a>
                         </li>
@@ -35,15 +32,13 @@
                             <i class="fas fa-user-circle fa-3x" style="color: secondary"></i>
                         </div>
                         <div id="usuario-div" class="ml-1 text-warning"><label>Bem vindo Usuário</label></div>
+                        <div><a class="nav-link text-warning" style="padding: 0px; margin: 24px 0 0 -30px;" onclick="localStorage.clear()" href="home">Sair</a></div>
                     </div>        
                 </div>
             </div>
             <div class="row">
                 <div class="col-6 mt-4">
-                    <div class="form-group">
-                        <label for="buscar">Pesquisar</label>
-                        <input type="text" class="form-control" id="buscar" placeholder="Nome da liga">
-                    </div>
+    
                 </div>
             </div>
             <div class="row">
@@ -89,7 +84,7 @@
                             <th style="width: 20%">Quantidade de jogadores</th>
                             </tr>
                             <tr onclick="carregarLiga(idLiga)" style="cursor: pointer">
-                                <td>FMU</td>
+                                <td>Barao</td>
                                 <td>6°</td>
                                 <td>6</td>
                             </tr>
@@ -125,7 +120,7 @@
                                     </thead>
                                     
                                     <tbody>
-                                    <!--
+                                    
                                         <tr>
                                             <td style="text-align: center">Joao2123</td>
                                             <td style="text-align: center">01° <i class="fas fa-arrow-down" style="color: red"></i></td>
@@ -166,7 +161,7 @@
                                             <td style="text-align: center">Zeca</td>
                                             <td style="text-align: center">10° <i class="fas fa-minus" style="color: blue"></i></td>
                                         </tr>
-                                        -->
+                                        
                                     </tbody>
                                 </table>                
                             </div>

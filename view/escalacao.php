@@ -20,9 +20,6 @@
                 </div>
                 <div>
                     <ul class="nav nav-pills nav-fill">
-                        <li class="nav-item ">
-                            <a class="nav-link text-warning" href="home">Página Inicial</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-white active" href="escalacao">Escalação</a>
                         </li>
@@ -37,9 +34,10 @@
                             <i class="fas fa-user-circle fa-3x" style="color: secondary"></i>
                         </div>
                         <div id="usuario-div" class="ml-1 text-warning">Bem vindo Usuário</div>
+                        <div><a class="nav-link text-warning" style="padding: 0px; margin: 24px 0 0 -30px;" onclick="localStorage.clear()" href="home">Sair</a></div>
                     </div> 
                     <div class="row m-auto">
-                        <div id="valorteste" class="ml-5 text-success"></div>
+                        <div id="valorteste" class="ml-5 text-success d-none"></div>
                     </div>       
                 </div>
             </div>
@@ -78,17 +76,17 @@
                                     <div class="col-sm-10">
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="gridRadios" id="rbd-5" value="5">
-                                            <label class="form-check-label" for="gridRadios1">
+                                            <label class="form-check-label" for="rbd-5">
                                                 Abaixo de 10$
                                             </label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="gridRadios" id="rbd-10" value="10">
-                                            <label class="form-check-label" for="gridRadios2">Maior de 10$ </label>
+                                            <label class="form-check-label" for="rbd-10">Maior de 10$ </label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="gridRadios" id="rbd-11" value="15">
-                                            <label class="form-check-label" for="gridRadios3">Maiores de 20$</label>
+                                            <label class="form-check-label" for="rbd-11">Maiores de 20$</label>
                                         </div>
                                     </div>
                                 </div>

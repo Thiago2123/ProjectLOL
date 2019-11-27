@@ -30,7 +30,7 @@ function cadastrar(){
 			'Valor-Jg': '',
 			'Valor-Mid': '',
 			'Valor-Top': '',
-			'Valor-Sup': ''	
+			'Valor-Sup': ''
 		}
 	};
 	$.notify({
