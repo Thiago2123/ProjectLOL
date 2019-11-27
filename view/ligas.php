@@ -48,11 +48,12 @@
             </div>
             <div class="row">
                 <div class="col-6">
-                    <table class="table table-striped table-dark">
+                    <table id="table-ligas" class="table table-striped table-dark">
                         <thead>
                             <tr><th style="text-align: center" colspan="3" >Ligas para participar </th></tr>
                         </thead>
                         <tbody>
+                        <!-- 
                             <tr>
                             <th style="width: 20%">Nome</th>
                             <th style="width: 20%">Quantidade de jogadores</th>
@@ -69,6 +70,7 @@
                                 <td>Família</td>
                                 <td>5</td>
                             </tr>
+                        -->
                         </tbody>
                     </table>                
                 </div>
@@ -171,5 +173,6 @@
                     </div>
                 </div>
             </div>
+            <script src="js/liga.js"></script>
     </body>
 </html>
