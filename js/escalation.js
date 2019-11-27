@@ -1,7 +1,7 @@
 window.onload = function() {
 	var user = $("#usuario-div");
 	var money = $("#valorteste");
-	// createPlayerTable()
+	createPlayerTable()
 	user[0].textContent = `Bem-vindo ${localStorage.getItem('login')}`
 
 	setTimeout(function(){
@@ -26,9 +26,9 @@ window.onload = function() {
 				}
 			}
 		}
-		}, 700)
-	
 		}, 300)
+	
+		}, 500)
 
 
 
