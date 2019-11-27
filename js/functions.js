@@ -18,7 +18,20 @@ function cadastrar(){
 		'email': email,
 		'password': senha,
 		'Valor': 50,
-		'Pontuacao': 0
+		'Pontuacao': 0,
+		'time':{
+			'time': '',
+			'Bot': '',
+			'Jg': '',
+			'Top': '',
+			'Mid': '',
+			'Sup': '',
+			'Valor-Bot': '',
+			'Valor-Jg': '',
+			'Valor-Mid': '',
+			'Valor-Top': '',
+			'Valor-Sup': ''	
+		}
 	};
 	$.notify({
 				//options

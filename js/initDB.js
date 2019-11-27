@@ -10,6 +10,10 @@ function insertOnDb(coll, json){
 	db.collection(coll).add(json)
 }
 
+function updateDb(coll, json, id){
+  db.collection(coll).doc(id).set(json, { merge: true })
+}
+
 
 function getDbDocument(coll, field, fieldValue){
 	obj = {}

@@ -31,7 +31,9 @@ window.onload = function() {
 		}, 500)
 
 
+	user[0].textContent = `Bem-vindo ${localStorage.getItem('login')}`
 
+	createPlayerTable()
 }
 
 $('#nometime').click(function(){
@@ -43,13 +45,44 @@ function getPlayers (){
 	return players;
 }
 
+function getUserData (){
+	var money = $("#valorteste");
+	var moneyUser = getDbDocument('users', 'name', localStorage.getItem('login'));
+
+
+	setTimeout(function(){
+	money[0].innerHTML = `<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> ${Object.values(moneyUser)[0]['Valor']}` 	
+	
+	var teamList = Object.keys(Object.values(moneyUser)[0]['time'])
+
+	var items = Object.values(moneyUser)[0]['time']
+
+	for (var i = 0; i < teamList.length; i++) {
+		if (teamList[i] != 'Nome'){
+			if (items[teamList[i]] != ""){
+				if (items[teamList[i]].indexOf('Valor') >= 0){
+					$('#'+teamList[i])[0].textContent = items[teamList[i]]
+				}
+				if (items[teamList[i]].indexOf('Valor') < 0){
+					$('#'+teamList[i])[0].innerHTML = `<i class="fas fa-times" style="color: red; cursor: pointer; text-shadow: 2px 2px darkred;" title="Tirar do time" onclick="remover(this)"></i> ${items[teamList[i]]}`
+				}
+			}
+		}
+	}
+		localStorage.setItem('id',Object.keys(moneyUser)[0])
+
+	}, 500)
+}
+
 function createPlayerTable (){
 	var testes = getPlayers();
 	setTimeout(function(){
 		for (var i = 0; i < Object.keys(testes).length; i++) {
 			playerTableRow(testes[Object.keys(testes)[i]])
 		}
+		getUserData();
 	},800)
+			
 }
 
 function playerTableRow (players){
@@ -120,10 +153,16 @@ function atualizaTotal(valor){
 
 	var fieldTotal = $('#valorTotal')[0];
 
-	fieldTotal.textContent = (+totalFinal)-(+valor)
+	var val = (+totalFinal)-(+valor);
+
+	fieldTotal.textContent = val;
+
+	checaValores(val);
 }
 
-
+function checaValores(valor){
+	
+}
 
 function remover(val){
 	var obj = {	'../ProjectLOL/img/Rotas/Top.png': 'Topo', 
@@ -145,8 +184,38 @@ function remover(val){
 
 function salvar_time() {
 	var times = document.querySelectorAll('#table-time tbody tr td');
-	times.forEach(function(time){
-		console.log(time.textContent)
-	})
-	console.log(times)
+	for (var i = 0; i< times.length; i++){
+		if(times[i].textContent.indexOf('Adicione') > 0){
+			alert(times[i].textContent);
+			return
+		}
+	}
+
+	var top = document.querySelector('#table-time #Top').textContent;
+	var jg = document.querySelector('#table-time #Jg').textContent;
+	var mid = document.querySelector('#table-time #Mid').textContent;
+	var bot = document.querySelector('#table-time #Bot').textContent;
+	var sup = document.querySelector('#table-time #Sup').textContent;
+
+	var topValue = document.querySelector('#table-time #Valor-Top').textContent;
+	var jgValue = document.querySelector('#table-time #Valor-Jg').textContent;
+	var midValue = document.querySelector('#table-time #Valor-Mid').textContent;
+	var botValue = document.querySelector('#table-time #Valor-Bot').textContent;
+	var supValue = document.querySelector('#table-time #Valor-Sup').textContent;
+
+	obj = 	{'time': 
+				{'Top': top,
+				'jg': jg,
+				'Mid': mid,
+				'Bot': bot,
+				'Sup': sup,
+				'Valor-Top': topValue,
+				'Valor-Jg': jgValue,
+				'Valor-Mid': midValue,
+				'Valor-Bot': botValue,
+				'Valor-Sup': supValue}}
+
+
+	updateDb('users', obj, localStorage.getItem('id'))
+
 }
