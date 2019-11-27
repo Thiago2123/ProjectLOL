@@ -1,9 +1,37 @@
-var user = $("#usuario-div");
-
 window.onload = function() {
-	createPlayerTable();
-	console.log(user)
+	var user = $("#usuario-div");
+	var money = $("#valorteste");
+	// createPlayerTable()
 	user[0].textContent = `Bem-vindo ${localStorage.getItem('login')}`
+
+	setTimeout(function(){
+		var moneyUser = getDbDocument('users', 'name', localStorage.getItem('login'));
+
+		setTimeout(function(){
+		money[0].innerHTML = `<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> ${Object.values(moneyUser)[0]['Valor']}` 	
+		
+		var teamList = Object.keys(Object.values(moneyUser)[0]['time'])
+
+		var items = Object.values(moneyUser)[0]['time']
+
+		for (var i = 0; i < teamList.length; i++) {
+			if (teamList[i] != 'Nome'){
+				if (items[teamList[i]] != ""){
+					if (items[teamList[i]].indexOf('Valor') >= 0){
+						$('#'+teamList[i])[0].textContent = items[teamList[i]]
+					}
+					if (items[teamList[i]].indexOf('Valor') < 0){
+						$('#'+teamList[i])[0].innerHTML = `<i class="fas fa-times" style="color: red; cursor: pointer; text-shadow: 2px 2px darkred;" title="Tirar do time" onclick="remover(this)"></i> ${items[teamList[i]]}`
+					}
+				}
+			}
+		}
+		}, 700)
+	
+		}, 300)
+
+
+
 }
 
 $('#nometime').click(function(){
@@ -60,7 +88,7 @@ function insertTable (tr){
 
 
 function func(val) {
-	var icone = '<i class="fas fa-times" style="color: red; cursor: pointer; text-shadow: 2px 2px darkred;" title="Tirar do time" onclick="remover()"></i>';
+	var icone = '<i class="fas fa-times" style="color: red; cursor: pointer; text-shadow: 2px 2px darkred;" title="Tirar do time" onclick="remover(this)"></i>';
 	
 	var tds = val.closest('tr').querySelectorAll('td');
 	var nome = tds[0].querySelector('b').textContent;
@@ -74,6 +102,10 @@ function func(val) {
 	tabelaTd[0].innerHTML = icone +' '+ nome;
 	tabelaTd[2].textContent = valor;
 
+	valoresParaTotal()
+}
+
+function valoresParaTotal(){
 	var comprados = $('.valor-comprados');
 	var total = 0
 	for (let i = 0; i<comprados.length; i++){
@@ -85,20 +117,36 @@ function func(val) {
 
 function atualizaTotal(valor){
 	var totalFinal = $("#valorteste")[0].textContent;
-	fieldTotal = $('#valorTotal')[0];
+
+	var fieldTotal = $('#valorTotal')[0];
 
 	fieldTotal.textContent = (+totalFinal)-(+valor)
-	
-		getDbDocument('players', 'valor', fieldTotal.textContent)
-		
-	
 }
-/*
-function a(){
-	
-	testes = getDbDocument('players', 'valor', "10")
-	for (var i = 0; i < Object.keys(testes).length; i++) {
-		//playerTableRow(testes[Object.keys(testes)[i]])
-	}
-}*/
 
+
+
+function remover(val){
+	var obj = {	'../ProjectLOL/img/Rotas/Top.png': 'Topo', 
+			'../ProjectLOL/img/Rotas/Jg.png': 'Selva',
+			'../ProjectLOL/img/Rotas/Mid.png': 'Meio',
+			'../ProjectLOL/img/Rotas/Bot.png': 'Atirador',
+			'../ProjectLOL/img/Rotas/Sup.png': 'Suporte'}
+
+	var tds = val.closest('tr').querySelectorAll('td');
+
+	var rota = tds[1].querySelector('img').getAttribute('src')
+
+	tds[0].innerHTML = `<b class="text-success"> Adicione um ${obj[rota]} </b>`
+
+	tds[2].textContent = 0
+
+	valoresParaTotal()
+}
+
+function salvar_time() {
+	var times = document.querySelectorAll('#table-time tbody tr td');
+	times.forEach(function(time){
+		console.log(time.textContent)
+	})
+	console.log(times)
+}
