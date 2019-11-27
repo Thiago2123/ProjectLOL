@@ -215,7 +215,6 @@ function salvar_time() {
 				'Valor-Bot': botValue,
 				'Valor-Sup': supValue}}
 
-
 	updateDb('users', obj, localStorage.getItem('id'))
 
 }

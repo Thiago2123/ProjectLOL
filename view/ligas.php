@@ -110,8 +110,7 @@
                         <div class="modal-body">
                             <div class="container-fluid">
                                 <div class="border mt-4 ml-3 mr-3 row ">
-                                    <div class=""><img src="../ProjectLOL/img/liga_emblema.jpg" style="width:100px; height:100px" class="rounded img-fluid"></div>
-                                    <div class="col-10">
+                                    <div class="col-10" style="height: 100px;">
                                         <h4>Liga Champions</h4>
                                         <p>Liga criada para fãs que gostam de uma boa parida de league of legends, pegando seu persongem preferido.</p>
                                         <i class="fas fa-users" style="color: green"> 200</i>
@@ -124,7 +123,9 @@
                                         <th style="width: 20%; text-align: center">Usuário</th>
                                         <th style="width: 20%; text-align: center">Posição</th>
                                     </thead>
+                                    
                                     <tbody>
+                                    <!--
                                         <tr>
                                             <td style="text-align: center">Joao2123</td>
                                             <td style="text-align: center">01° <i class="fas fa-arrow-down" style="color: red"></i></td>
@@ -165,6 +166,7 @@
                                             <td style="text-align: center">Zeca</td>
                                             <td style="text-align: center">10° <i class="fas fa-minus" style="color: blue"></i></td>
                                         </tr>
+                                        -->
                                     </tbody>
                                 </table>                
                             </div>
@@ -176,6 +178,7 @@
                     </div>
                 </div>
             </div>
+            
             <script src="js/liga.js"></script>
     </body>
 </html>
