@@ -1,5 +1,35 @@
 window.onload = function() {
 	var user = $("#usuario-div");
+	var money = $("#valorteste");
+	createPlayerTable()
+	user[0].textContent = `Bem-vindo ${localStorage.getItem('login')}`
+
+	setTimeout(function(){
+		var moneyUser = getDbDocument('users', 'name', localStorage.getItem('login'));
+
+		setTimeout(function(){
+		money[0].innerHTML = `<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> ${Object.values(moneyUser)[0]['Valor']}` 	
+		
+		var teamList = Object.keys(Object.values(moneyUser)[0]['time'])
+
+		var items = Object.values(moneyUser)[0]['time']
+
+		for (var i = 0; i < teamList.length; i++) {
+			if (teamList[i] != 'Nome'){
+				if (items[teamList[i]] != ""){
+					if (items[teamList[i]].indexOf('Valor') >= 0){
+						$('#'+teamList[i])[0].textContent = items[teamList[i]]
+					}
+					if (items[teamList[i]].indexOf('Valor') < 0){
+						$('#'+teamList[i])[0].innerHTML = `<i class="fas fa-times" style="color: red; cursor: pointer; text-shadow: 2px 2px darkred;" title="Tirar do time" onclick="remover(this)"></i> ${items[teamList[i]]}`
+					}
+				}
+			}
+		}
+		}, 300)
+	
+		}, 500)
+
 
 	user[0].textContent = `Bem-vindo ${localStorage.getItem('login')}`
 

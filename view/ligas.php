@@ -34,7 +34,7 @@
                         <div style="width:50px; height: 50px">
                             <i class="fas fa-user-circle fa-3x" style="color: secondary"></i>
                         </div>
-                        <div class="ml-1 text-warning"><label>Bem vindo Usuário</label></div>
+                        <div id="usuario-div" class="ml-1 text-warning"><label>Bem vindo Usuário</label></div>
                     </div>        
                 </div>
             </div>
@@ -50,14 +50,16 @@
                 <div class="col-6">
                     <table id="table-ligas" class="table table-striped table-dark">
                         <thead>
-                            <tr><th style="text-align: center" colspan="3" >Ligas para participar </th></tr>
+                            <tr>
+                                <th style="text-align: center" colspan="3" >Ligas para participar </th>
+                            </tr>
+                            <tr>
+                                <th style="width: 20%">Nome</th>
+                                <th style="width: 20%">Quantidade de jogadores</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <!-- 
-                            <tr>
-                            <th style="width: 20%">Nome</th>
-                            <th style="width: 20%">Quantidade de jogadores</th>
-                            </tr>
+                        <!--
                             <tr onclick="$('#modal_info_liga').modal('show')" style="cursor: pointer">
                                 <td>Champions</td>
                                 <td>200</td>
@@ -71,6 +73,7 @@
                                 <td>5</td>
                             </tr>
                         -->
+                    
                         </tbody>
                     </table>                
                 </div>
