@@ -22,6 +22,17 @@ function getDbDocument(coll, field, fieldValue){
     return obj;   
 }
 
+function getDbDocumentArray(coll, field, fieldValue){
+  obj = {}
+  var a = db.collection(coll).where(field, "array-contains", fieldValue).get().then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            // doc.data() is never undefined for query doc snapshots
+            obj[doc.id] = doc.data();
+        });
+    })
+    return obj;   
+}
+
 function getFullDocument(coll){
 	obj = {}
 	db.collection(coll).get().then((querySnapshot) => {

@@ -16,7 +16,9 @@ function cadastrar(){
 	obj ={
 		'name': name,
 		'email': email,
-		'password': senha
+		'password': senha,
+		'Valor': 50,
+		'Pontuacao': 0
 	};
 	$.notify({
 				//options

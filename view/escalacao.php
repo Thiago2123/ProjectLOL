@@ -39,7 +39,7 @@
                         <div id="usuario-div" class="ml-1 text-warning">Bem vindo Usuário</div>
                     </div> 
                     <div class="row m-auto">
-                        <div id="valorteste" class="ml-5 text-success"><i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> 50</div>
+                        <div id="valorteste" class="ml-5 text-success"></div>
                     </div>       
                 </div>
             </div>
@@ -131,39 +131,39 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>
-                                                <b class="text-success "> Adicione um Topo</b>
+                                            <td id="Top">
+                                                <b class="text-success"> Adicione um Topo</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Top.png" class="border border-secondary" style="width:40px; height: 30px"></td>
-                                            <td class="valor-comprados"> 0 </td>
+                                            <td class="valor-comprados" id="Valor-Top"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td id="Jg">
                                                 <b class="text-success">Adicione um Selva</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Jg.png" class="border border-secondary" style="width:40px; height: 30px"></td>
-                                            <td class="valor-comprados"> 0 </td>
+                                            <td class="valor-comprados" id="Valor-Jg"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td id="Mid">
                                                 <b class="text-success"> Adicione um Meio </b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Mid.png" class="border border-secondary" style="width:40px; height: 30px"></td>
-                                            <td class="valor-comprados"> 0 </td>
+                                            <td class="valor-comprados" id="Valor-Mid"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <b class="text-success">Adicione um Atirador</b>
+                                            <td id="Bot">
+                                                <b class="text-success" >Adicione um Atirador</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Bot.png" class="border border-secondary" style="width:40px; height: 30px"></td>
-                                            <td class="valor-comprados"> 0 </td>
+                                            <td class="valor-comprados" id="Valor-Bot"> 0 </td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td id="Sup">
                                                 <b class="text-success">Adicione um Suporte</b>
                                             </td>
                                             <td style="margin-left: 5%;"><img src="../ProjectLOL/img/Rotas/Sup.png" class="border border-secondary" style="width:40px; height: 30px"></td>
-                                            <td class="valor-comprados"> 0 </td>
+                                            <td class="valor-comprados" id="Valor-Sup"> 0 </td>
                                         </tr>
                                     </tbody>
                                 </table>
