@@ -10,8 +10,6 @@ $('#nometime').click(function(){
 	$('#nometime').attr('contenteditable', true);
 });
 
-
-
 function getPlayers (){
 	var players = getFullDocument('players');
 	return players;
@@ -48,7 +46,7 @@ function getUserData (){
 
 function createPlayerTable (){
 	var testes = getPlayers();
-		setTimeout(function(){
+	setTimeout(function(){
 		for (var i = 0; i < Object.keys(testes).length; i++) {
 			playerTableRow(testes[Object.keys(testes)[i]])
 		}
@@ -59,7 +57,7 @@ function createPlayerTable (){
 
 function playerTableRow (players){
 	var tr = document.createElement('tr');
-	var nickname = players['Nome'].split(' ')[1]
+	var nickname = players['Nome'].split(' ')[1];
 
 	var td = `<td>
 	    <div class="row">
@@ -78,11 +76,11 @@ function playerTableRow (players){
 	<td>
 		<div style="margin-left: 10%;">
 			<i class="fas fa-money-bill-wave" style="color: green" title="Preço"></i> ${players['Valor']}
+			
 			<i onClick="func(this)" class="fas fa-shopping-cart compradores" style="cursor:pointer" title="Comprar"></i> 
 		</div>
 	</td>`;
 	tr.innerHTML = td;
-
 	insertTable(tr);
 }
 
@@ -105,7 +103,6 @@ function func(val) {
 	var tabelaTd = tabela.querySelectorAll('td');
 
 	tabelaTd[0].innerHTML = icone +' '+ nome;
-
 	tabelaTd[2].textContent = valor;
 
 	valoresParaTotal()
@@ -117,6 +114,7 @@ function valoresParaTotal(){
 	for (let i = 0; i<comprados.length; i++){
     	total = (+total) + (+comprados[i].textContent);
 	}
+	console.log(total)
 	atualizaTotal(total);
 }
 
@@ -156,6 +154,7 @@ function remover(val){
 
 function salvar_time() {
 	var times = document.querySelectorAll('#table-time tbody tr td');
+<<<<<<< HEAD
 	for (var i = 0; i< times.length; i++){
 		if(times[i].textContent.indexOf('Adicione') > 0){
 			alert(times[i].textContent);
