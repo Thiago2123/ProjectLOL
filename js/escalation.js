@@ -60,16 +60,19 @@ function getUserData (){
 	for (var i = 0; i < teamList.length; i++) {
 		if (teamList[i] != 'Nome'){
 			if (items[teamList[i]] != ""){
-				if (items[teamList[i]].indexOf('Valor') >= 0){
+				console.log(teamList[i].indexOf('Valor'))
+				console.log(teamList[i])
+				if (+teamList[i].indexOf('Valor') >= 0){
 					$('#'+teamList[i])[0].textContent = items[teamList[i]]
 				}
-				if (items[teamList[i]].indexOf('Valor') < 0){
+				if (+teamList[i].indexOf('Valor') < 0){
 					$('#'+teamList[i])[0].innerHTML = `<i class="fas fa-times" style="color: red; cursor: pointer; text-shadow: 2px 2px darkred;" title="Tirar do time" onclick="remover(this)"></i> ${items[teamList[i]]}`
 				}
 			}
 		}
 	}
 		localStorage.setItem('id',Object.keys(moneyUser)[0])
+	valoresParaTotal()
 
 	}, 500)
 }
@@ -144,7 +147,6 @@ function valoresParaTotal(){
 	for (let i = 0; i<comprados.length; i++){
     	total = (+total) + (+comprados[i].textContent);
 	}
-	console.log(total)
 	atualizaTotal(total);
 }
 
@@ -161,6 +163,24 @@ function atualizaTotal(valor){
 }
 
 function checaValores(valor){
+	var a = $('#table-players tbody tr');
+	console.log(a)
+	for(var i = 0; i<a.length ; i++){
+		console.log('AAAAAAAAAAAAAA')
+		var td = a[i].querySelectorAll('td');
+		var val = a[i].querySelectorAll('td')[3].textContent
+		console.log(val)
+		a[i].querySelectorAll('td')[3].querySelectorAll('i')[1].style['color'] = 'white';
+		a[i].querySelectorAll('td')[3].querySelectorAll('i')[1].style['cursor'] = 'pointer';
+		a[i].querySelectorAll('td')[3].querySelectorAll('i')[1].setAttribute("onclick","func(this)");
+		if(+val > (+valor)){
+			a[i].querySelectorAll('td')[3].querySelectorAll('i')[1].style['color'] = 'grey';
+			a[i].querySelectorAll('td')[3].querySelectorAll('i')[1].style['cursor'] = '';
+			a[i].querySelectorAll('td')[3].querySelectorAll('i')[1].removeAttribute("onclick");
+		}
+
+
+	}
 	
 }
 
@@ -205,7 +225,7 @@ function salvar_time() {
 
 	obj = 	{'time': 
 				{'Top': top,
-				'jg': jg,
+				'Jg': jg,
 				'Mid': mid,
 				'Bot': bot,
 				'Sup': sup,
